@@ -1,0 +1,7 @@
+https://www.thingiverse.com/thing:3245238
+https://oshpark.com/shared_projects/jqp6SYQ6
+
+
+
+U1 3x23 Pin 2.54mm pitch header. 
+Samtec SSQ-123-02-T-T-RA, SSW-123-02-T-T-RA (or -F-T-RA versions). 

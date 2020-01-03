@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name custom_components)(type KiCad)(uri "$(KIPRJMOD)/custom_components.pretty")(options "")(descr ""))
+  (lib (name pcengine_expansion)(type KiCad)(uri "$(KIPRJMOD)/pcengine-expansion.pretty")(options "")(descr ""))
+)
