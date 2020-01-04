@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:pcehd-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -13,18 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L custom_components:HDMI_CONN J1
-U 1 1 54FF6BC9
-P 8600 3450
-F 0 "J1" H 8850 3050 50  0000 C CNN
-F 1 "HDMI_CONN" V 8950 3450 50  0000 C CNN
-F 2 "custom_components:HDMI_CONN-10029449-111RLF" H 8600 3450 50  0001 C CNN
-F 3 "DOCUMENTATION" H 8600 3450 50  0001 C CNN
-F 4 "10029449-111RLF" H 8600 3450 60  0001 C CNN "Part ID"
-	1    8600 3450
-	1    0    0    -1  
-$EndComp
 Text HLabel 1800 2200 0    60   Input ~ 0
 DE
 Text HLabel 1800 2100 0    60   Input ~ 0
@@ -318,78 +307,6 @@ F 3 "" H 3200 6100 60  0000 C CNN
 	1    3200 6100
 	-1   0    0    1   
 $EndComp
-$Comp
-L pcehd-rescue:GND-power #PWR037
-U 1 1 5501FA6A
-P 7850 4150
-F 0 "#PWR037" H 7850 4150 30  0001 C CNN
-F 1 "GND" H 7850 4080 30  0001 C CNN
-F 2 "" H 7850 4150 60  0001 C CNN
-F 3 "" H 7850 4150 60  0000 C CNN
-	1    7850 4150
-	0    1    1    0   
-$EndComp
-Text Label 6950 2600 0    60   ~ 0
-TX2+
-Text Label 6950 2700 0    60   ~ 0
-TX2-
-Text Label 6950 2900 0    60   ~ 0
-TX1+
-Text Label 6950 3000 0    60   ~ 0
-TX1-
-Text Label 6950 3200 0    60   ~ 0
-TX0+
-Text Label 6950 3300 0    60   ~ 0
-TX0-
-Text Label 6950 3500 0    60   ~ 0
-TXC+
-Text Label 6950 3600 0    60   ~ 0
-TXC-
-$Comp
-L pcehd-rescue:GND-power #PWR033
-U 1 1 5501FBCF
-P 7850 2650
-F 0 "#PWR033" H 7850 2650 30  0001 C CNN
-F 1 "GND" H 7850 2580 30  0001 C CNN
-F 2 "" H 7850 2650 60  0001 C CNN
-F 3 "" H 7850 2650 60  0000 C CNN
-	1    7850 2650
-	0    1    1    0   
-$EndComp
-$Comp
-L pcehd-rescue:GND-power #PWR034
-U 1 1 5501FBD5
-P 7850 2950
-F 0 "#PWR034" H 7850 2950 30  0001 C CNN
-F 1 "GND" H 7850 2880 30  0001 C CNN
-F 2 "" H 7850 2950 60  0001 C CNN
-F 3 "" H 7850 2950 60  0000 C CNN
-	1    7850 2950
-	0    1    1    0   
-$EndComp
-$Comp
-L pcehd-rescue:GND-power #PWR035
-U 1 1 5501FBDB
-P 7850 3250
-F 0 "#PWR035" H 7850 3250 30  0001 C CNN
-F 1 "GND" H 7850 3180 30  0001 C CNN
-F 2 "" H 7850 3250 60  0001 C CNN
-F 3 "" H 7850 3250 60  0000 C CNN
-	1    7850 3250
-	0    1    1    0   
-$EndComp
-$Comp
-L pcehd-rescue:GND-power #PWR036
-U 1 1 5501FBE1
-P 7850 3550
-F 0 "#PWR036" H 7850 3550 30  0001 C CNN
-F 1 "GND" H 7850 3480 30  0001 C CNN
-F 2 "" H 7850 3550 60  0001 C CNN
-F 3 "" H 7850 3550 60  0000 C CNN
-	1    7850 3550
-	0    1    1    0   
-$EndComp
-NoConn ~ 7850 3850
 Text HLabel 10450 1000 0    60   Input ~ 0
 DVDD3V3
 Text Label 10500 1000 0    60   ~ 0
@@ -440,8 +357,6 @@ F 3 "" H 9950 5900 60  0000 C CNN
 $EndComp
 Text Label 10650 5550 0    60   ~ 0
 DVDD1V8
-Text Notes 8400 4300 0    60   ~ 0
-max. 55mA
 Text Notes 9750 5350 0    60   ~ 0
 max. 200mA
 $Comp
@@ -597,96 +512,10 @@ Text Notes 11800 3450 0    60   ~ 0
 max. 55mA (AVCC18)
 Text Notes 11800 3550 0    60   ~ 0
 max. 127mA (DVDD18)
-$Comp
-L pcehd-rescue:R-Device R5
-U 1 1 5653050C
-P 7550 4500
-F 0 "R5" V 7630 4500 50  0000 C CNN
-F 1 "10k" V 7550 4500 50  0000 C CNN
-F 2 "custom_components:SM0603_Resistor_libcms" V 7480 4500 30  0001 C CNN
-F 3 "" H 7550 4500 30  0000 C CNN
-	1    7550 4500
-	1    0    0    -1  
-$EndComp
-$Comp
-L pcehd-rescue:GND-power #PWR032
-U 1 1 5653059A
-P 7550 4650
-F 0 "#PWR032" H 7550 4650 30  0001 C CNN
-F 1 "GND" H 7550 4580 30  0001 C CNN
-F 2 "" H 7550 4650 60  0001 C CNN
-F 3 "" H 7550 4650 60  0000 C CNN
-	1    7550 4650
-	1    0    0    -1  
-$EndComp
-Text Label 7300 4350 0    60   ~ 0
-HPD
-$Comp
-L pcehd-rescue:R-Device R4
-U 1 1 5686A65C
-P 6550 3800
-F 0 "R4" V 6630 3800 50  0000 C CNN
-F 1 "2.2k" V 6550 3800 50  0000 C CNN
-F 2 "custom_components:SM0603_Resistor_libcms" V 6480 3800 30  0001 C CNN
-F 3 "" H 6550 3800 30  0000 C CNN
-	1    6550 3800
-	1    0    0    -1  
-$EndComp
-$Comp
-L pcehd-rescue:R-Device R3
-U 1 1 5686A73A
-P 5950 3900
-F 0 "R3" V 6030 3900 50  0000 C CNN
-F 1 "2.2k" V 5950 3900 50  0000 C CNN
-F 2 "custom_components:SM0603_Resistor_libcms" V 5880 3900 30  0001 C CNN
-F 3 "" H 5950 3900 30  0000 C CNN
-	1    5950 3900
-	1    0    0    -1  
-$EndComp
-Text Label 6100 3950 0    60   ~ 0
-DDCSCL
-Text Label 5450 4050 0    60   ~ 0
-DDCSDA
-$Comp
-L pcehd-rescue:Fuse_Small-Device F1
-U 1 1 5686BBED
-P 6500 4250
-F 0 "F1" H 6460 4310 50  0000 L CNN
-F 1 "MF-FSMF020X-2" H 6380 4190 50  0000 L CNN
-F 2 "custom_components:SM0603_Resistor_libcms" H 6500 4250 60  0001 C CNN
-F 3 "" H 6500 4250 60  0000 C CNN
-	1    6500 4250
-	1    0    0    -1  
-$EndComp
 Text HLabel 10450 1150 0    60   Input ~ 0
 5V
 Text Label 10600 1150 0    60   ~ 0
 5V
-Text Label 5550 4250 0    60   ~ 0
-5V
-$Comp
-L pcehd-rescue:PWR_FLAG-power #FLG07
-U 1 1 56874505
-P 7050 4250
-F 0 "#FLG07" H 7050 4345 30  0001 C CNN
-F 1 "PWR_FLAG" H 7050 4400 30  0000 C CNN
-F 2 "" H 7050 4250 60  0001 C CNN
-F 3 "" H 7050 4250 60  0000 C CNN
-	1    7050 4250
-	1    0    0    -1  
-$EndComp
-Text Label 7300 4250 0    60   ~ 0
-5V_FUSED
-Text Label 5950 3750 1    60   ~ 0
-5V_FUSED
-Text Label 6550 3650 1    60   ~ 0
-5V_FUSED
-Text HLabel 1800 1200 0    60   Input ~ 0
-I2S_DATA
-Text HLabel 1800 1700 0    60   Input ~ 0
-I2S_WS
-Text HLabel 1800 1600 0    60   Input ~ 0
-I2S_BCK
 $Comp
 L HDMI:ADV7513 U2
 U 1 1 5A38E9E6
@@ -883,50 +712,6 @@ F 3 "" H 4200 4050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L custom_components:RClamp0524P D2
-U 1 1 5A45A154
-P 7500 2800
-F 0 "D2" H 7500 3150 60  0000 C CNN
-F 1 "RClamp0524P" V 7500 2800 50  0000 C CNN
-F 2 "custom_components:SLP2510P8" H 7550 2850 60  0001 C CNN
-F 3 "" H 7550 2850 60  0001 C CNN
-	1    7500 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L custom_components:RClamp0524P D3
-U 1 1 5A45A34F
-P 7500 3400
-F 0 "D3" H 7500 3050 60  0000 C CNN
-F 1 "RClamp0524P" V 7500 3400 50  0000 C CNN
-F 2 "custom_components:SLP2510P8" H 7550 3450 60  0001 C CNN
-F 3 "" H 7550 3450 60  0001 C CNN
-	1    7500 3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L pcehd-rescue:GND-power #PWR029
-U 1 1 5A460B12
-P 6900 2800
-F 0 "#PWR029" H 6900 2800 30  0001 C CNN
-F 1 "GND" H 6900 2730 30  0001 C CNN
-F 2 "" H 6900 2800 60  0001 C CNN
-F 3 "" H 6900 2800 60  0000 C CNN
-	1    6900 2800
-	0    1    1    0   
-$EndComp
-$Comp
-L pcehd-rescue:GND-power #PWR030
-U 1 1 5A460BB9
-P 6900 3400
-F 0 "#PWR030" H 6900 3400 30  0001 C CNN
-F 1 "GND" H 6900 3330 30  0001 C CNN
-F 2 "" H 6900 3400 60  0001 C CNN
-F 3 "" H 6900 3400 60  0000 C CNN
-	1    6900 3400
-	0    1    1    0   
-$EndComp
-$Comp
 L pcehd-rescue:GND-power #PWR06
 U 1 1 5A7FEA92
 P 1950 1050
@@ -1003,31 +788,10 @@ F 3 "" H 1300 4950 30  0000 C CNN
 	1    1300 4950
 	1    0    0    -1  
 $EndComp
-NoConn ~ 7850 3750
 NoConn ~ 3950 3900
 Connection ~ 1300 5100
 Wire Wire Line
 	550  4800 1300 4800
-Connection ~ 7350 2700
-Connection ~ 7650 2700
-Connection ~ 7650 3600
-Connection ~ 7350 3600
-Connection ~ 7350 3500
-Connection ~ 7650 3500
-Connection ~ 7650 3300
-Connection ~ 7350 3300
-Connection ~ 7350 3200
-Connection ~ 7650 3200
-Connection ~ 7650 3000
-Connection ~ 7350 3000
-Connection ~ 7350 2900
-Connection ~ 7650 2900
-Connection ~ 7350 2600
-Connection ~ 7650 2600
-Wire Wire Line
-	7750 3050 7850 3050
-Wire Wire Line
-	7750 3000 7750 3050
 Wire Wire Line
 	10400 5500 10400 5550
 Wire Wire Line
@@ -1035,39 +799,6 @@ Wire Wire Line
 Connection ~ 9650 5550
 Wire Wire Line
 	9650 5500 9650 5550
-Wire Wire Line
-	7700 3650 7850 3650
-Wire Wire Line
-	7700 3600 7700 3650
-Wire Wire Line
-	7700 3450 7850 3450
-Wire Wire Line
-	7700 3500 7700 3450
-Wire Wire Line
-	7700 3350 7850 3350
-Wire Wire Line
-	7700 3300 7700 3350
-Wire Wire Line
-	7700 3150 7850 3150
-Wire Wire Line
-	7700 3200 7700 3150
-Wire Wire Line
-	7700 2850 7850 2850
-Wire Wire Line
-	7700 2900 7700 2850
-Wire Wire Line
-	7700 2750 7850 2750
-Wire Wire Line
-	7700 2700 7700 2750
-Wire Wire Line
-	7700 2550 7850 2550
-Wire Wire Line
-	7700 2600 7700 2550
-Wire Wire Line
-	6900 3400 7350 3400
-Wire Wire Line
-	6900 2800 7350 2800
-Connection ~ 5950 4050
 Wire Wire Line
 	3950 3750 4200 3750
 Wire Wire Line
@@ -1201,11 +932,11 @@ Wire Wire Line
 Wire Wire Line
 	1800 1900 1950 1900
 Wire Wire Line
-	1800 1700 1950 1700
+	1350 1700 1950 1700
 Wire Wire Line
-	1800 1600 1950 1600
+	1350 1600 1950 1600
 Wire Wire Line
-	1800 1200 1950 1200
+	1350 1200 1950 1200
 Connection ~ 9950 5900
 Wire Wire Line
 	9350 5900 9350 5850
@@ -1214,54 +945,15 @@ Wire Wire Line
 Wire Wire Line
 	10500 5900 10500 5850
 Connection ~ 10500 5550
-Connection ~ 7050 4250
-Wire Wire Line
-	6600 4250 7050 4250
-Connection ~ 6550 3950
-Wire Wire Line
-	6550 3650 6550 3500
-Wire Wire Line
-	5950 3600 5950 3750
 Wire Wire Line
 	10450 1150 10900 1150
 Wire Wire Line
-	5450 4050 5950 4050
-Wire Wire Line
-	6100 3950 6550 3950
-Connection ~ 7550 4350
-Wire Wire Line
-	7250 4350 7550 4350
-Wire Wire Line
 	8750 5550 9350 5550
-Wire Notes Line
-	8400 4300 8400 4200
-Wire Notes Line
-	8950 4300 8400 4300
-Wire Notes Line
-	8950 4200 8950 4300
-Wire Notes Line
-	8400 4200 8950 4200
 Wire Wire Line
 	10400 5550 10500 5550
 Connection ~ 9350 5550
 Wire Wire Line
 	10900 1000 10450 1000
-Wire Wire Line
-	6900 3600 7350 3600
-Wire Wire Line
-	6900 3500 7350 3500
-Wire Wire Line
-	6900 3300 7350 3300
-Wire Wire Line
-	6900 3200 7350 3200
-Wire Wire Line
-	6900 3000 7350 3000
-Wire Wire Line
-	6900 2900 7350 2900
-Wire Wire Line
-	6900 2700 7350 2700
-Wire Wire Line
-	6900 2600 7350 2600
 $Comp
 L pcehd-rescue:GND-power #PWR019
 U 1 1 5A802186
@@ -1307,46 +999,10 @@ Wire Wire Line
 	1450 7400 2500 7400
 Text Label 550  4800 0    60   ~ 0
 DVDD3V3_FILT_DVDD_3V
-Connection ~ 7350 2800
-Connection ~ 7350 3400
 Wire Wire Line
 	1300 5100 1950 5100
 Wire Wire Line
-	7350 2700 7650 2700
-Wire Wire Line
-	7650 2700 7700 2700
-Wire Wire Line
-	7650 3600 7700 3600
-Wire Wire Line
-	7350 3600 7650 3600
-Wire Wire Line
-	7350 3500 7650 3500
-Wire Wire Line
-	7650 3500 7700 3500
-Wire Wire Line
-	7650 3300 7700 3300
-Wire Wire Line
-	7350 3300 7650 3300
-Wire Wire Line
-	7350 3200 7650 3200
-Wire Wire Line
-	7650 3200 7700 3200
-Wire Wire Line
-	7650 3000 7750 3000
-Wire Wire Line
-	7350 3000 7650 3000
-Wire Wire Line
-	7350 2900 7650 2900
-Wire Wire Line
-	7650 2900 7700 2900
-Wire Wire Line
-	7350 2600 7650 2600
-Wire Wire Line
-	7650 2600 7700 2600
-Wire Wire Line
 	9650 5550 9650 5600
-Wire Wire Line
-	5950 4050 7850 4050
 Wire Wire Line
 	4800 6800 4950 6800
 Wire Wire Line
@@ -1386,12 +1042,6 @@ Wire Wire Line
 Wire Wire Line
 	10500 5550 10700 5550
 Wire Wire Line
-	7050 4250 7850 4250
-Wire Wire Line
-	6550 3950 7850 3950
-Wire Wire Line
-	7550 4350 7850 4350
-Wire Wire Line
 	9350 5550 9650 5550
 Wire Wire Line
 	1850 6400 2050 6400
@@ -1401,27 +1051,789 @@ Wire Wire Line
 	5200 6800 5300 6800
 Wire Wire Line
 	2500 6950 2700 6950
+Text HLabel 9450 1800 2    60   Input ~ 0
+AudioL
+Text HLabel 9450 1700 2    60   Input ~ 0
+AudioR
 Wire Wire Line
-	7350 2800 7650 2800
+	5200 5450 5400 5450
 Wire Wire Line
-	7350 3400 7650 3400
+	4450 5450 4900 5450
 $Comp
 L pcehd-rescue:D_Schottky-Device D1
 U 1 1 5BBFB469
-P 6050 4250
-F 0 "D1" H 6050 4150 50  0000 C CNN
-F 1 "ZHCS400TA" H 6050 4350 50  0000 C CNN
-F 2 "custom_components:SOD-323_Handsoldering" H 6050 4250 50  0001 C CNN
-F 3 "~" H 6050 4250 50  0001 C CNN
-	1    6050 4250
+P 5050 5450
+F 0 "D1" H 5050 5350 50  0000 C CNN
+F 1 "ZHCS400TA" H 5050 5550 50  0000 C CNN
+F 2 "custom_components:SOD-323_Handsoldering" H 5050 5450 50  0001 C CNN
+F 3 "~" H 5050 5450 50  0001 C CNN
+	1    5050 5450
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	5450 4250 5900 4250
+	6350 4600 6650 4600
 Wire Wire Line
-	6200 4250 6400 4250
-Text HLabel 5900 1100 2    60   Input ~ 0
-AudioL
-Text HLabel 5900 1200 2    60   Input ~ 0
-AudioR
+	6350 4000 6650 4000
+Wire Wire Line
+	6550 5550 6850 5550
+Wire Wire Line
+	5550 5150 6850 5150
+Wire Wire Line
+	6050 5450 6850 5450
+Wire Wire Line
+	4950 5250 6850 5250
+Wire Wire Line
+	6650 3800 6700 3800
+Wire Wire Line
+	6350 3800 6650 3800
+Wire Wire Line
+	6650 4100 6700 4100
+Wire Wire Line
+	6350 4100 6650 4100
+Wire Wire Line
+	6350 4200 6650 4200
+Wire Wire Line
+	6650 4200 6750 4200
+Wire Wire Line
+	6650 4400 6700 4400
+Wire Wire Line
+	6350 4400 6650 4400
+Wire Wire Line
+	6350 4500 6650 4500
+Wire Wire Line
+	6650 4500 6700 4500
+Wire Wire Line
+	6650 4700 6700 4700
+Wire Wire Line
+	6350 4700 6650 4700
+Wire Wire Line
+	6350 4800 6650 4800
+Wire Wire Line
+	6650 4800 6700 4800
+Wire Wire Line
+	6650 3900 6700 3900
+Wire Wire Line
+	6350 3900 6650 3900
+Connection ~ 6350 4600
+Connection ~ 6350 4000
+Wire Wire Line
+	5900 3800 6350 3800
+Wire Wire Line
+	5900 3900 6350 3900
+Wire Wire Line
+	5900 4100 6350 4100
+Wire Wire Line
+	5900 4200 6350 4200
+Wire Wire Line
+	5900 4400 6350 4400
+Wire Wire Line
+	5900 4500 6350 4500
+Wire Wire Line
+	5900 4700 6350 4700
+Wire Wire Line
+	5900 4800 6350 4800
+Wire Notes Line
+	7400 5400 7950 5400
+Wire Notes Line
+	7950 5400 7950 5500
+Wire Notes Line
+	7950 5500 7400 5500
+Wire Notes Line
+	7400 5500 7400 5400
+Wire Wire Line
+	6250 5550 6550 5550
+Connection ~ 6550 5550
+Wire Wire Line
+	5100 5150 5550 5150
+Wire Wire Line
+	4450 5250 4950 5250
+Wire Wire Line
+	4950 4800 4950 4950
+Wire Wire Line
+	5550 4850 5550 4700
+Connection ~ 5550 5150
+Wire Wire Line
+	5600 5450 6050 5450
+Connection ~ 6050 5450
+Connection ~ 4950 5250
+Wire Wire Line
+	5900 4000 6350 4000
+Wire Wire Line
+	5900 4600 6350 4600
+Wire Wire Line
+	6700 3800 6700 3750
+Wire Wire Line
+	6700 3750 6850 3750
+Wire Wire Line
+	6700 3900 6700 3950
+Wire Wire Line
+	6700 3950 6850 3950
+Wire Wire Line
+	6700 4100 6700 4050
+Wire Wire Line
+	6700 4050 6850 4050
+Wire Wire Line
+	6700 4400 6700 4350
+Wire Wire Line
+	6700 4350 6850 4350
+Wire Wire Line
+	6700 4500 6700 4550
+Wire Wire Line
+	6700 4550 6850 4550
+Wire Wire Line
+	6700 4700 6700 4650
+Wire Wire Line
+	6700 4650 6850 4650
+Wire Wire Line
+	6700 4800 6700 4850
+Wire Wire Line
+	6700 4850 6850 4850
+Wire Wire Line
+	6750 4200 6750 4250
+Wire Wire Line
+	6750 4250 6850 4250
+Connection ~ 6650 3800
+Connection ~ 6350 3800
+Connection ~ 6650 4100
+Connection ~ 6350 4100
+Connection ~ 6350 4200
+Connection ~ 6650 4200
+Connection ~ 6650 4400
+Connection ~ 6350 4400
+Connection ~ 6350 4500
+Connection ~ 6650 4500
+Connection ~ 6650 4700
+Connection ~ 6350 4700
+Connection ~ 6350 4800
+Connection ~ 6650 4800
+Connection ~ 6650 3900
+Connection ~ 6350 3900
+NoConn ~ 6850 4950
+$Comp
+L pcehd-rescue:GND-power #PWR030
+U 1 1 5A460BB9
+P 5900 4600
+F 0 "#PWR030" H 5900 4600 30  0001 C CNN
+F 1 "GND" H 5900 4530 30  0001 C CNN
+F 2 "" H 5900 4600 60  0001 C CNN
+F 3 "" H 5900 4600 60  0000 C CNN
+	1    5900 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L pcehd-rescue:GND-power #PWR029
+U 1 1 5A460B12
+P 5900 4000
+F 0 "#PWR029" H 5900 4000 30  0001 C CNN
+F 1 "GND" H 5900 3930 30  0001 C CNN
+F 2 "" H 5900 4000 60  0001 C CNN
+F 3 "" H 5900 4000 60  0000 C CNN
+	1    5900 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L custom_components:RClamp0524P D3
+U 1 1 5A45A34F
+P 6500 4600
+F 0 "D3" H 6500 4250 60  0000 C CNN
+F 1 "RClamp0524P" V 6500 4600 50  0000 C CNN
+F 2 "custom_components:SLP2510P8" H 6550 4650 60  0001 C CNN
+F 3 "" H 6550 4650 60  0001 C CNN
+	1    6500 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L custom_components:RClamp0524P D2
+U 1 1 5A45A154
+P 6500 4000
+F 0 "D2" H 6500 4350 60  0000 C CNN
+F 1 "RClamp0524P" V 6500 4000 50  0000 C CNN
+F 2 "custom_components:SLP2510P8" H 6550 4050 60  0001 C CNN
+F 3 "" H 6550 4050 60  0001 C CNN
+	1    6500 4000
+	1    0    0    -1  
+$EndComp
+Text Label 5550 4850 1    60   ~ 0
+5V_FUSED
+Text Label 4950 4950 1    60   ~ 0
+5V_FUSED
+Text Label 6300 5450 0    60   ~ 0
+5V_FUSED
+$Comp
+L pcehd-rescue:PWR_FLAG-power #FLG07
+U 1 1 56874505
+P 6050 5450
+F 0 "#FLG07" H 6050 5545 30  0001 C CNN
+F 1 "PWR_FLAG" H 6050 5600 30  0000 C CNN
+F 2 "" H 6050 5450 60  0001 C CNN
+F 3 "" H 6050 5450 60  0000 C CNN
+	1    6050 5450
+	1    0    0    -1  
+$EndComp
+Text Label 4550 5450 0    60   ~ 0
+5V
+$Comp
+L pcehd-rescue:Fuse_Small-Device F1
+U 1 1 5686BBED
+P 5500 5450
+F 0 "F1" H 5460 5510 50  0000 L CNN
+F 1 "MF-FSMF020X-2" H 5380 5390 50  0000 L CNN
+F 2 "custom_components:SM0603_Resistor_libcms" H 5500 5450 60  0001 C CNN
+F 3 "" H 5500 5450 60  0000 C CNN
+	1    5500 5450
+	1    0    0    -1  
+$EndComp
+Text Label 4450 5250 0    60   ~ 0
+DDCSDA
+Text Label 5100 5150 0    60   ~ 0
+DDCSCL
+$Comp
+L pcehd-rescue:R-Device R3
+U 1 1 5686A73A
+P 4950 5100
+F 0 "R3" V 5030 5100 50  0000 C CNN
+F 1 "2.2k" V 4950 5100 50  0000 C CNN
+F 2 "custom_components:SM0603_Resistor_libcms" V 4880 5100 30  0001 C CNN
+F 3 "" H 4950 5100 30  0000 C CNN
+	1    4950 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L pcehd-rescue:R-Device R4
+U 1 1 5686A65C
+P 5550 5000
+F 0 "R4" V 5630 5000 50  0000 C CNN
+F 1 "2.2k" V 5550 5000 50  0000 C CNN
+F 2 "custom_components:SM0603_Resistor_libcms" V 5480 5000 30  0001 C CNN
+F 3 "" H 5550 5000 30  0000 C CNN
+	1    5550 5000
+	1    0    0    -1  
+$EndComp
+Text Label 6300 5550 0    60   ~ 0
+HPD
+$Comp
+L pcehd-rescue:GND-power #PWR032
+U 1 1 5653059A
+P 6550 5850
+F 0 "#PWR032" H 6550 5850 30  0001 C CNN
+F 1 "GND" H 6550 5780 30  0001 C CNN
+F 2 "" H 6550 5850 60  0001 C CNN
+F 3 "" H 6550 5850 60  0000 C CNN
+	1    6550 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L pcehd-rescue:R-Device R5
+U 1 1 5653050C
+P 6550 5700
+F 0 "R5" V 6630 5700 50  0000 C CNN
+F 1 "10k" V 6550 5700 50  0000 C CNN
+F 2 "custom_components:SM0603_Resistor_libcms" V 6480 5700 30  0001 C CNN
+F 3 "" H 6550 5700 30  0000 C CNN
+	1    6550 5700
+	1    0    0    -1  
+$EndComp
+Text Notes 7400 5500 0    60   ~ 0
+max. 55mA
+NoConn ~ 6850 5050
+$Comp
+L pcehd-rescue:GND-power #PWR036
+U 1 1 5501FBE1
+P 6850 4750
+F 0 "#PWR036" H 6850 4750 30  0001 C CNN
+F 1 "GND" H 6850 4680 30  0001 C CNN
+F 2 "" H 6850 4750 60  0001 C CNN
+F 3 "" H 6850 4750 60  0000 C CNN
+	1    6850 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L pcehd-rescue:GND-power #PWR035
+U 1 1 5501FBDB
+P 6850 4450
+F 0 "#PWR035" H 6850 4450 30  0001 C CNN
+F 1 "GND" H 6850 4380 30  0001 C CNN
+F 2 "" H 6850 4450 60  0001 C CNN
+F 3 "" H 6850 4450 60  0000 C CNN
+	1    6850 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L pcehd-rescue:GND-power #PWR034
+U 1 1 5501FBD5
+P 6850 4150
+F 0 "#PWR034" H 6850 4150 30  0001 C CNN
+F 1 "GND" H 6850 4080 30  0001 C CNN
+F 2 "" H 6850 4150 60  0001 C CNN
+F 3 "" H 6850 4150 60  0000 C CNN
+	1    6850 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L pcehd-rescue:GND-power #PWR033
+U 1 1 5501FBCF
+P 6850 3850
+F 0 "#PWR033" H 6850 3850 30  0001 C CNN
+F 1 "GND" H 6850 3780 30  0001 C CNN
+F 2 "" H 6850 3850 60  0001 C CNN
+F 3 "" H 6850 3850 60  0000 C CNN
+	1    6850 3850
+	0    1    1    0   
+$EndComp
+Text Label 5950 4800 0    60   ~ 0
+TXC-
+Text Label 5950 4700 0    60   ~ 0
+TXC+
+Text Label 5950 4500 0    60   ~ 0
+TX0-
+Text Label 5950 4400 0    60   ~ 0
+TX0+
+Text Label 5950 4200 0    60   ~ 0
+TX1-
+Text Label 5950 4100 0    60   ~ 0
+TX1+
+Text Label 5950 3900 0    60   ~ 0
+TX2-
+Text Label 5950 3800 0    60   ~ 0
+TX2+
+$Comp
+L pcehd-rescue:GND-power #PWR037
+U 1 1 5501FA6A
+P 6850 5350
+F 0 "#PWR037" H 6850 5350 30  0001 C CNN
+F 1 "GND" H 6850 5280 30  0001 C CNN
+F 2 "" H 6850 5350 60  0001 C CNN
+F 3 "" H 6850 5350 60  0000 C CNN
+	1    6850 5350
+	0    1    1    0   
+$EndComp
+$Comp
+L custom_components:HDMI_CONN J1
+U 1 1 54FF6BC9
+P 7600 4650
+F 0 "J1" H 7850 4250 50  0000 C CNN
+F 1 "HDMI_CONN" V 7950 4650 50  0000 C CNN
+F 2 "custom_components:HDMI_CONN-10029449-111RLF" H 7600 4650 50  0001 C CNN
+F 3 "DOCUMENTATION" H 7600 4650 50  0001 C CNN
+F 4 "10029449-111RLF" H 7600 4650 60  0001 C CNN "Part ID"
+	1    7600 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L ossc_board-rescue:PCM1862 U14
+U 1 1 5E15FD33
+P 7650 1950
+F 0 "U14" H 7650 2665 50  0000 C CNN
+F 1 "PCM1862" H 7650 2574 50  0000 C CNN
+F 2 "custom_components:TSSOP-30_4.4x7.8mm_Pitch0.5mm_Handsoldering" H 7650 1950 50  0001 C CNN
+F 3 "DOCUMENTATION" H 7700 1950 50  0001 C CNN
+	1    7650 1950
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6850 1800
+NoConn ~ 6850 1700
+NoConn ~ 6850 1600
+NoConn ~ 6850 1500
+NoConn ~ 8450 1500
+NoConn ~ 8450 1600
+$Comp
+L pcehd-rescue:C_Small-Device C85
+U 1 1 5E19CAA8
+P 8850 1800
+F 0 "C85" H 8900 1750 50  0000 C CNN
+F 1 "10u" H 8950 1850 50  0000 C CNN
+F 2 "custom_components:SM0603_Capa_libcms" H 8850 1800 50  0001 C CNN
+F 3 "" H 8850 1800 50  0001 C CNN
+	1    8850 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L pcehd-rescue:C_Small-Device C84
+U 1 1 5E1A6830
+P 8650 1700
+F 0 "C84" H 8600 1650 50  0000 C CNN
+F 1 "10u" H 8550 1750 50  0000 C CNN
+F 2 "custom_components:SM0603_Capa_libcms" H 8650 1700 50  0001 C CNN
+F 3 "" H 8650 1700 50  0001 C CNN
+	1    8650 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L ossc_board-rescue:R_Small R17
+U 1 1 5E1A81B0
+P 8950 1600
+F 0 "R17" H 9009 1646 50  0000 L CNN
+F 1 "100k" H 9009 1555 50  0000 L CNN
+F 2 "custom_components:SM0603_Resistor_libcms" H 8950 1600 50  0001 C CNN
+F 3 "" H 8950 1600 50  0000 C CNN
+	1    8950 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L ossc_board-rescue:R_Small R19
+U 1 1 5E1AA411
+P 9150 1900
+F 0 "R19" H 9209 1946 50  0000 L CNN
+F 1 "100k" H 9209 1855 50  0000 L CNN
+F 2 "custom_components:SM0603_Resistor_libcms" H 9150 1900 50  0001 C CNN
+F 3 "" H 9150 1900 50  0000 C CNN
+	1    9150 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 1700 8550 1700
+Wire Wire Line
+	8450 1800 8750 1800
+Wire Wire Line
+	8750 1700 8950 1700
+Wire Wire Line
+	8950 1800 9150 1800
+$Comp
+L pcehd-rescue:GND-power #PWR0119
+U 1 1 5E1DC1BA
+P 9150 2000
+F 0 "#PWR0119" H 9150 2000 30  0001 C CNN
+F 1 "GND" H 9150 1930 30  0001 C CNN
+F 2 "" H 9150 2000 60  0001 C CNN
+F 3 "" H 9150 2000 60  0000 C CNN
+	1    9150 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L pcehd-rescue:GND-power #PWR0120
+U 1 1 5E1DD410
+P 8800 1350
+F 0 "#PWR0120" H 8800 1350 30  0001 C CNN
+F 1 "GND" H 8800 1280 30  0001 C CNN
+F 2 "" H 8800 1350 60  0001 C CNN
+F 3 "" H 8800 1350 60  0000 C CNN
+	1    8800 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 1350 8950 1350
+Wire Wire Line
+	8950 1350 8950 1500
+Wire Wire Line
+	8950 1700 9450 1700
+Connection ~ 8950 1700
+Wire Wire Line
+	9150 1800 9450 1800
+Connection ~ 9150 1800
+Wire Wire Line
+	8450 2100 8800 2100
+Wire Wire Line
+	8450 2200 8800 2200
+Text Label 8650 2100 0    60   ~ 0
+SCL
+Text Label 8650 2200 0    60   ~ 0
+SDA
+$Comp
+L pcehd-rescue:GND-power #PWR0121
+U 1 1 5E2143E5
+P 8450 1900
+F 0 "#PWR0121" H 8450 1900 30  0001 C CNN
+F 1 "GND" H 8450 1830 30  0001 C CNN
+F 2 "" H 8450 1900 60  0001 C CNN
+F 3 "" H 8450 1900 60  0000 C CNN
+	1    8450 1900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L pcehd-rescue:GND-power #PWR0138
+U 1 1 5E21508E
+P 8450 2000
+F 0 "#PWR0138" H 8450 2000 30  0001 C CNN
+F 1 "GND" H 8450 1930 30  0001 C CNN
+F 2 "" H 8450 2000 60  0001 C CNN
+F 3 "" H 8450 2000 60  0000 C CNN
+	1    8450 2000
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 8450 2300
+NoConn ~ 8450 2400
+NoConn ~ 8450 2500
+NoConn ~ 8450 2600
+Wire Wire Line
+	8450 2700 9000 2700
+Wire Wire Line
+	8450 2800 9000 2800
+Wire Wire Line
+	8450 2900 9000 2900
+Text Label 8550 2700 0    60   ~ 0
+I2S_DATA
+Text Label 8550 2800 0    60   ~ 0
+I2S_BCK
+Text Label 8550 2900 0    60   ~ 0
+I2S_WS
+Text Label 1350 1200 0    60   ~ 0
+I2S_DATA
+Text Label 1350 1600 0    60   ~ 0
+I2S_BCK
+Text Label 1350 1700 0    60   ~ 0
+I2S_WS
+$Comp
+L pcehd-rescue:GND-power #PWR0141
+U 1 1 5E2DDAAC
+P 6850 2900
+F 0 "#PWR0141" H 6850 2900 30  0001 C CNN
+F 1 "GND" H 6850 2830 30  0001 C CNN
+F 2 "" H 6850 2900 60  0001 C CNN
+F 3 "" H 6850 2900 60  0000 C CNN
+	1    6850 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L pcehd-rescue:C_Small-Device C81
+U 1 1 5E2DE8E2
+P 6350 2900
+F 0 "C81" H 6400 2850 50  0000 C CNN
+F 1 "10u" H 6450 2950 50  0000 C CNN
+F 2 "custom_components:SM0603_Capa_libcms" H 6350 2900 50  0001 C CNN
+F 3 "" H 6350 2900 50  0001 C CNN
+	1    6350 2900
+	-1   0    0    1   
+$EndComp
+$Comp
+L pcehd-rescue:C_Small-Device C80
+U 1 1 5E2DF8C5
+P 6100 2900
+F 0 "C80" H 6150 2850 50  0000 C CNN
+F 1 "10u" H 6200 2950 50  0000 C CNN
+F 2 "custom_components:SM0603_Capa_libcms" H 6100 2900 50  0001 C CNN
+F 3 "" H 6100 2900 50  0001 C CNN
+	1    6100 2900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6100 2800 6350 2800
+Wire Wire Line
+	6350 2800 6850 2800
+Connection ~ 6350 2800
+Wire Wire Line
+	6850 2700 6850 2800
+Connection ~ 6850 2800
+Text Label 6400 2800 0    60   ~ 0
+DVDD3V3
+$Comp
+L pcehd-rescue:GND-power #PWR0142
+U 1 1 5E30C692
+P 6850 2600
+F 0 "#PWR0142" H 6850 2600 30  0001 C CNN
+F 1 "GND" H 6850 2530 30  0001 C CNN
+F 2 "" H 6850 2600 60  0001 C CNN
+F 3 "" H 6850 2600 60  0000 C CNN
+	1    6850 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L pcehd-rescue:C_Small-Device C83
+U 1 1 5E30CAA1
+P 6600 2500
+F 0 "C83" H 6650 2450 50  0000 C CNN
+F 1 "2.2u" H 6700 2550 50  0000 C CNN
+F 2 "custom_components:SM0603_Capa_libcms" H 6600 2500 50  0001 C CNN
+F 3 "" H 6600 2500 50  0001 C CNN
+	1    6600 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L pcehd-rescue:GND-power #PWR0143
+U 1 1 5E30D7AE
+P 6500 2500
+F 0 "#PWR0143" H 6500 2500 30  0001 C CNN
+F 1 "GND" H 6500 2430 30  0001 C CNN
+F 2 "" H 6500 2500 60  0001 C CNN
+F 3 "" H 6500 2500 60  0000 C CNN
+	1    6500 2500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6700 2500 6850 2500
+$Comp
+L ossc_board-rescue:Crystal_Small Y1
+U 1 1 5E32122F
+P 5650 2450
+F 0 "Y1" H 5650 2250 50  0000 C CNN
+F 1 "24.576MHz" H 5650 2350 50  0000 C CNN
+F 2 "custom_components:ECS-3X9X" H 5650 2583 50  0001 C CNN
+F 3 "" H 5650 2450 50  0000 C CNN
+	1    5650 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L pcehd-rescue:GND-power #PWR0144
+U 1 1 5E323092
+P 6350 3000
+F 0 "#PWR0144" H 6350 3000 30  0001 C CNN
+F 1 "GND" H 6350 2930 30  0001 C CNN
+F 2 "" H 6350 3000 60  0001 C CNN
+F 3 "" H 6350 3000 60  0000 C CNN
+	1    6350 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L pcehd-rescue:GND-power #PWR0145
+U 1 1 5E323BDD
+P 6100 3000
+F 0 "#PWR0145" H 6100 3000 30  0001 C CNN
+F 1 "GND" H 6100 2930 30  0001 C CNN
+F 2 "" H 6100 3000 60  0001 C CNN
+F 3 "" H 6100 3000 60  0000 C CNN
+	1    6100 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L pcehd-rescue:C_Small-Device C77
+U 1 1 5E323E90
+P 5500 2700
+F 0 "C77" H 5550 2800 50  0000 C CNN
+F 1 "30p" H 5650 2700 50  0000 C CNN
+F 2 "custom_components:SM0603_Capa_libcms" H 5500 2700 50  0001 C CNN
+F 3 "" H 5500 2700 50  0001 C CNN
+	1    5500 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L pcehd-rescue:GND-power #PWR0149
+U 1 1 5E324442
+P 5500 2800
+F 0 "#PWR0149" H 5500 2800 30  0001 C CNN
+F 1 "GND" H 5500 2730 30  0001 C CNN
+F 2 "" H 5500 2800 60  0001 C CNN
+F 3 "" H 5500 2800 60  0000 C CNN
+	1    5500 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L pcehd-rescue:C_Small-Device C79
+U 1 1 5E3248CE
+P 5800 2700
+F 0 "C79" H 5750 2800 50  0000 C CNN
+F 1 "30p" H 5650 2700 50  0000 C CNN
+F 2 "custom_components:SM0603_Capa_libcms" H 5800 2700 50  0001 C CNN
+F 3 "" H 5800 2700 50  0001 C CNN
+	1    5800 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L pcehd-rescue:GND-power #PWR0150
+U 1 1 5E324D87
+P 5800 2800
+F 0 "#PWR0150" H 5800 2800 30  0001 C CNN
+F 1 "GND" H 5800 2730 30  0001 C CNN
+F 2 "" H 5800 2800 60  0001 C CNN
+F 3 "" H 5800 2800 60  0000 C CNN
+	1    5800 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 2600 5500 2450
+Wire Wire Line
+	5500 2450 5550 2450
+Wire Wire Line
+	5750 2450 5800 2450
+Wire Wire Line
+	5800 2450 5800 2600
+Wire Wire Line
+	5800 2450 5800 2400
+Wire Wire Line
+	5800 2400 6850 2400
+Connection ~ 5800 2450
+Wire Wire Line
+	5500 2450 5500 2300
+Wire Wire Line
+	5500 2300 6850 2300
+Connection ~ 5500 2450
+$Comp
+L pcehd-rescue:GND-power #PWR0151
+U 1 1 5E361BF0
+P 6850 2100
+F 0 "#PWR0151" H 6850 2100 30  0001 C CNN
+F 1 "GND" H 6850 2030 30  0001 C CNN
+F 2 "" H 6850 2100 60  0001 C CNN
+F 3 "" H 6850 2100 60  0000 C CNN
+	1    6850 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L pcehd-rescue:C_Small-Device C78
+U 1 1 5E364341
+P 5750 2050
+F 0 "C78" H 5800 2000 50  0000 C CNN
+F 1 "10u" H 5850 2100 50  0000 C CNN
+F 2 "custom_components:SM0603_Capa_libcms" H 5750 2050 50  0001 C CNN
+F 3 "" H 5750 2050 50  0001 C CNN
+	1    5750 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L pcehd-rescue:C_Small-Device C68
+U 1 1 5E365202
+P 5500 2050
+F 0 "C68" H 5550 2000 50  0000 C CNN
+F 1 "10u" H 5600 2100 50  0000 C CNN
+F 2 "custom_components:SM0603_Capa_libcms" H 5500 2050 50  0001 C CNN
+F 3 "" H 5500 2050 50  0001 C CNN
+	1    5500 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 1950 5750 1950
+Connection ~ 5750 1950
+Wire Wire Line
+	5750 1950 5500 1950
+Text Label 5550 1950 0    60   ~ 0
+DVDD3V3
+$Comp
+L pcehd-rescue:GND-power #PWR0152
+U 1 1 5E38AE7C
+P 5750 2150
+F 0 "#PWR0152" H 5750 2150 30  0001 C CNN
+F 1 "GND" H 5750 2080 30  0001 C CNN
+F 2 "" H 5750 2150 60  0001 C CNN
+F 3 "" H 5750 2150 60  0000 C CNN
+	1    5750 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L pcehd-rescue:GND-power #PWR0153
+U 1 1 5E38C04F
+P 5500 2150
+F 0 "#PWR0153" H 5500 2150 30  0001 C CNN
+F 1 "GND" H 5500 2080 30  0001 C CNN
+F 2 "" H 5500 2150 60  0001 C CNN
+F 3 "" H 5500 2150 60  0000 C CNN
+	1    5500 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 1950 6050 2200
+Wire Wire Line
+	6050 2200 6850 2200
+$Comp
+L pcehd-rescue:C_Small-Device C82
+U 1 1 5E3B3E86
+P 6550 2000
+F 0 "C82" H 6600 1950 50  0000 C CNN
+F 1 "2.2u" H 6650 2050 50  0000 C CNN
+F 2 "custom_components:SM0603_Capa_libcms" H 6550 2000 50  0001 C CNN
+F 3 "" H 6550 2000 50  0001 C CNN
+	1    6550 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L pcehd-rescue:GND-power #PWR0154
+U 1 1 5E3B481C
+P 6450 2000
+F 0 "#PWR0154" H 6450 2000 30  0001 C CNN
+F 1 "GND" H 6450 1930 30  0001 C CNN
+F 2 "" H 6450 2000 60  0001 C CNN
+F 3 "" H 6450 2000 60  0000 C CNN
+	1    6450 2000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6650 2000 6850 2000
+NoConn ~ 6850 1900
 $EndSCHEMATC

@@ -3,4 +3,5 @@
   (lib (name HDMI)(type Legacy)(uri ${KIPRJMOD}/HDMI.lib)(options "")(descr ""))
   (lib (name pcengine_expansion)(type Legacy)(uri ${KIPRJMOD}/pcengineexpansion.lib)(options "")(descr ""))
   (lib (name pcehd-rescue)(type Legacy)(uri ${KIPRJMOD}/pcehd-rescue.lib)(options "")(descr ""))
+  (lib (name ossc_board-rescue)(type Legacy)(uri ${KIPRJMOD}/ossc_board-rescue.lib)(options "")(descr ""))
 )

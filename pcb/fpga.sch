@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:pcehd-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -1500,10 +1501,6 @@ F 3 "" H 1600 900 50  0000 C CNN
 $EndComp
 Text Label 1650 650  0    60   ~ 0
 VCCIO
-Text HLabel 13750 5450 2    60   Output ~ 0
-HDMITX_I2S_DATA
-Text HLabel 14500 5300 0    60   Output ~ 0
-HDMITX_I2S_BCK
 Text HLabel 1700 4650 0    60   Input ~ 0
 DCK
 $Comp
@@ -1996,8 +1993,6 @@ Text HLabel 3200 1850 1    60   Input ~ 0
 A8
 Text HLabel 1700 2950 0    60   Input ~ 0
 A11
-Text HLabel 14500 5150 0    60   Output ~ 0
-HDMITX_I2S_WS
 Text HLabel 1700 3350 0    60   Input ~ 0
 A16
 Text HLabel 1700 3250 0    60   Input ~ 0
