@@ -58,5 +58,4 @@ Thanks to the FPGAPCE project on github for a nice HDL example of the entire con
 https://github.com/Torlus/FPGAPCE
 
 Thanks to skum for the very clean and well layed out KiCad symbol and footprint of the expansion connector. Its 69 pins but somehow his symbol is manageable.
-https://oshpark.com/profiles/skum
-https://oshpark.com/shared_projects/qyVkkKLJ
+https://github.com/skumlos/pcengine-rgb-addon
