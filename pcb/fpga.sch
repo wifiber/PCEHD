@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:pcehd-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 4
+Sheet 2 5
 Title "PCEHD"
 Date "2020-01-03"
 Rev "0.1"
@@ -821,14 +820,8 @@ Text HLabel 1650 1200 0    60   BiDi ~ 0
 SDA
 Text HLabel 1650 1300 0    60   Output ~ 0
 SCL
-Text HLabel 5600 1850 1    60   BiDi ~ 0
-D6
-Text HLabel 5700 1850 1    60   BiDi ~ 0
-D7
 Text HLabel 5800 1850 1    60   Output ~ 0
 DDIR
-Text HLabel 4400 1850 1    60   BiDi ~ 0
-D0
 Text Label 4400 6750 1    60   ~ 0
 VCCIO
 $Comp
@@ -853,22 +846,6 @@ F 3 "" H 4400 7100 60  0000 C CNN
 	1    4400 7100
 	1    0    0    -1  
 $EndComp
-Text HLabel 3700 1850 1    60   Input ~ 0
-A4
-Text HLabel 3600 1850 1    60   Input ~ 0
-A5
-Text HLabel 3400 1850 1    60   Input ~ 0
-A6
-Text HLabel 3300 1850 1    60   Input ~ 0
-A7
-Text HLabel 4100 1850 1    60   Input ~ 0
-A2
-Text HLabel 4200 1850 1    60   Input ~ 0
-A1
-Text HLabel 4300 1850 1    60   Input ~ 0
-A0
-Text HLabel 4000 1850 1    60   Input ~ 0
-A3
 Text HLabel 1700 4750 0    60   Input ~ 0
 SPBG
 Text HLabel 5300 6350 3    60   Input ~ 0
@@ -879,40 +856,8 @@ Text HLabel 3000 6350 3    60   Output ~ 0
 HDMITX_HSYNC
 Text HLabel 3100 6350 3    60   Output ~ 0
 HDMITX_DE
-Text HLabel 3200 6350 3    60   Output ~ 0
-HDMITX_B0
-Text HLabel 3700 6350 3    60   Output ~ 0
-HDMITX_B1
-Text HLabel 3800 6350 3    60   Output ~ 0
-HDMITX_B2
-Text HLabel 3900 6350 3    60   Output ~ 0
-HDMITX_B3
-Text HLabel 4600 6350 3    60   Output ~ 0
-HDMITX_B4
-Text HLabel 4700 6350 3    60   Output ~ 0
-HDMITX_B5
-Text HLabel 4800 6350 3    60   Output ~ 0
-HDMITX_B6
-Text HLabel 5400 6350 3    60   Output ~ 0
-HDMITX_B7
 Text HLabel 5600 6350 3    60   Output ~ 0
 HDMITX_PCLK
-Text HLabel 5500 6350 3    60   Output ~ 0
-HDMITX_G0
-Text HLabel 5700 6350 3    60   Output ~ 0
-HDMITX_G1
-Text HLabel 5900 6350 3    60   Output ~ 0
-HDMITX_G2
-Text HLabel 6000 6350 3    60   Output ~ 0
-HDMITX_G3
-Text HLabel 6800 5550 2    60   Output ~ 0
-HDMITX_G4
-Text HLabel 6800 5450 2    60   Output ~ 0
-HDMITX_G5
-Text HLabel 6800 4850 2    60   Output ~ 0
-HDMITX_G6
-Text HLabel 6800 4650 2    60   Output ~ 0
-HDMITX_G7
 Text Label 5200 1450 3    60   ~ 0
 VCCIO
 $Comp
@@ -937,22 +882,6 @@ F 3 "" H 5100 1050 60  0000 C CNN
 	1    5100 1050
 	-1   0    0    1   
 $EndComp
-Text HLabel 6800 4550 2    60   Output ~ 0
-HDMITX_R0
-Text HLabel 6800 4450 2    60   Output ~ 0
-HDMITX_R1
-Text HLabel 6800 3350 2    60   Output ~ 0
-HDMITX_R2
-Text HLabel 6800 3250 2    60   Output ~ 0
-HDMITX_R3
-Text HLabel 6800 3150 2    60   Output ~ 0
-HDMITX_R4
-Text HLabel 6800 3050 2    60   Output ~ 0
-HDMITX_R5
-Text HLabel 6800 2850 2    60   Output ~ 0
-HDMITX_R6
-Text HLabel 6800 2550 2    60   Output ~ 0
-HDMITX_R7
 $Comp
 L pcehd-rescue:GND-power #PWR0125
 U 1 1 54FE10A9
@@ -1465,18 +1394,6 @@ F 3 "" H 8200 6550 60  0000 C CNN
 $EndComp
 Text Label 7900 6250 0    60   ~ 0
 VCCIO
-Text HLabel 4800 1850 1    60   BiDi ~ 0
-D1
-Text HLabel 4900 1850 1    60   BiDi ~ 0
-D2
-Text HLabel 5400 1850 1    60   BiDi ~ 0
-D4
-Text HLabel 5500 1850 1    60   BiDi ~ 0
-D5
-Text HLabel 2500 1850 1    60   Input ~ 0
-A10
-Text HLabel 2600 1850 1    60   Input ~ 0
-A9
 $Comp
 L pcehd-rescue:R-Device R10
 U 1 1 57E9E8FA
@@ -1987,28 +1904,6 @@ Wire Wire Line
 	10600 6600 10800 6600
 Wire Wire Line
 	9450 6600 9750 6600
-Text HLabel 5000 1850 1    60   BiDi ~ 0
-D3
-Text HLabel 3200 1850 1    60   Input ~ 0
-A8
-Text HLabel 1700 2950 0    60   Input ~ 0
-A11
-Text HLabel 1700 3350 0    60   Input ~ 0
-A16
-Text HLabel 1700 3250 0    60   Input ~ 0
-A12
-Text HLabel 1700 4450 0    60   Input ~ 0
-A20
-Text HLabel 4000 6350 3    60   Input ~ 0
-VD0
-Text HLabel 4100 6350 3    60   Input ~ 0
-VD1
-Text HLabel 4200 6350 3    60   Input ~ 0
-VD2
-Text HLabel 4300 6350 3    60   Input ~ 0
-VD3
-Text HLabel 6800 4050 2    60   Input ~ 0
-VD4
 Text HLabel 1700 5050 0    60   Input ~ 0
 CS
 Text HLabel 1700 5350 0    60   Input ~ 0
@@ -2017,15 +1912,493 @@ Text HLabel 1700 5450 0    60   Input ~ 0
 WR_N
 Text HLabel 1700 5550 0    60   Input ~ 0
 XRD
-Text HLabel 6800 4150 2    60   Input ~ 0
-VD5
-Text HLabel 6800 4250 2    60   Input ~ 0
-VD6
-Text HLabel 6800 4350 2    60   Input ~ 0
-VD7
 Text HLabel 3400 6350 3    60   Output ~ 0
 CDD
 Text HLabel 6800 5150 2    60   Output ~ 0
 RST_N
 NoConn ~ 6800 2650
+Entry Wire Line
+	9500 2750 9600 2850
+Entry Wire Line
+	9500 2650 9600 2750
+Entry Wire Line
+	9500 2550 9600 2650
+Entry Wire Line
+	9500 2450 9600 2550
+Entry Wire Line
+	9500 2350 9600 2450
+Entry Wire Line
+	9500 2250 9600 2350
+Entry Wire Line
+	9500 2150 9600 2250
+Entry Wire Line
+	9500 2050 9600 2150
+Text Label 9600 2850 0    60   ~ 0
+D7
+Text Label 9600 2750 0    60   ~ 0
+D6
+Text Label 9600 2650 0    60   ~ 0
+D5
+Text Label 9600 2550 0    60   ~ 0
+D4
+Text Label 9600 2450 0    60   ~ 0
+D3
+Text Label 9600 2350 0    60   ~ 0
+D2
+Text Label 9600 2250 0    60   ~ 0
+D1
+Text HLabel 9500 1950 0    60   BiDi ~ 0
+D[0..7]
+Wire Wire Line
+	4400 1850 4400 1700
+Text Label 4400 1700 1    60   ~ 0
+D0
+Text Label 9600 2150 0    60   ~ 0
+D0
+Wire Wire Line
+	4800 1850 4800 1700
+Wire Wire Line
+	4900 1850 4900 1700
+Wire Wire Line
+	5000 1850 5000 1700
+Wire Wire Line
+	5400 1850 5400 1700
+Wire Wire Line
+	5500 1850 5500 1700
+Wire Wire Line
+	5600 1850 5600 1700
+Wire Wire Line
+	5700 1850 5700 1700
+Text Label 4800 1700 1    60   ~ 0
+D1
+Text Label 4900 1700 1    60   ~ 0
+D2
+Text Label 5000 1700 1    60   ~ 0
+D3
+Text Label 5400 1700 1    60   ~ 0
+D4
+Text Label 5500 1700 1    60   ~ 0
+D5
+Text Label 5600 1700 1    60   ~ 0
+D6
+Text Label 5700 1700 1    60   ~ 0
+D7
+Entry Wire Line
+	10000 3500 10100 3600
+Entry Wire Line
+	10000 3400 10100 3500
+Entry Wire Line
+	10000 3300 10100 3400
+Entry Wire Line
+	10000 3200 10100 3300
+Entry Wire Line
+	10000 3100 10100 3200
+Entry Wire Line
+	10000 3000 10100 3100
+Entry Wire Line
+	10000 2900 10100 3000
+Entry Wire Line
+	10000 2800 10100 2900
+Entry Wire Line
+	10000 2700 10100 2800
+Entry Wire Line
+	10000 2600 10100 2700
+Entry Wire Line
+	10000 2500 10100 2600
+Entry Wire Line
+	10000 2400 10100 2500
+Entry Wire Line
+	10000 2300 10100 2400
+Entry Wire Line
+	10000 2200 10100 2300
+Entry Wire Line
+	10000 2100 10100 2200
+Entry Wire Line
+	10000 2000 10100 2100
+Entry Wire Line
+	10000 1900 10100 2000
+Text Label 10100 2000 0    60   ~ 0
+A0
+Text Label 10100 2100 0    60   ~ 0
+A1
+Text Label 10100 2200 0    60   ~ 0
+A2
+Text Label 10100 2300 0    60   ~ 0
+A3
+Text Label 10100 2400 0    60   ~ 0
+A4
+Text Label 10100 2500 0    60   ~ 0
+A5
+Text Label 10100 2600 0    60   ~ 0
+A6
+Text Label 10100 2700 0    60   ~ 0
+A7
+Text Label 10100 2800 0    60   ~ 0
+A8
+Text Label 10100 2900 0    60   ~ 0
+A9
+Text Label 10100 3000 0    60   ~ 0
+A10
+Text Label 10100 3100 0    60   ~ 0
+A11
+Text Label 10100 3200 0    60   ~ 0
+A12
+Text Label 10100 3300 0    60   ~ 0
+A13
+Text Label 10100 3400 0    60   ~ 0
+A14
+Text Label 10100 3500 0    60   ~ 0
+A15
+Text Label 10100 3600 0    60   ~ 0
+A16
+Entry Wire Line
+	10000 3600 10100 3700
+Entry Wire Line
+	10000 3700 10100 3800
+Entry Wire Line
+	10000 3800 10100 3900
+Entry Wire Line
+	10000 3900 10100 4000
+Text Label 10100 3700 0    60   ~ 0
+A17
+Text Label 10100 3800 0    60   ~ 0
+A18
+Text Label 10100 3900 0    60   ~ 0
+A19
+Text Label 10100 4000 0    60   ~ 0
+A20
+Text HLabel 10000 1800 0    60   Input ~ 0
+A[0..20]
+Entry Wire Line
+	9450 3800 9550 3900
+Entry Wire Line
+	9450 3700 9550 3800
+Entry Wire Line
+	9450 3600 9550 3700
+Entry Wire Line
+	9450 3500 9550 3600
+Entry Wire Line
+	9450 3400 9550 3500
+Entry Wire Line
+	9450 3300 9550 3400
+Entry Wire Line
+	9450 3200 9550 3300
+Entry Wire Line
+	9450 3100 9550 3200
+Text Label 9550 3900 0    60   ~ 0
+VD7
+Text Label 9550 3800 0    60   ~ 0
+VD6
+Text Label 9550 3700 0    60   ~ 0
+VD5
+Text Label 9550 3600 0    60   ~ 0
+VD4
+Text Label 9550 3500 0    60   ~ 0
+VD3
+Text Label 9550 3400 0    60   ~ 0
+VD2
+Text Label 9550 3300 0    60   ~ 0
+VD1
+Text Label 9550 3200 0    60   ~ 0
+VD0
+Text HLabel 9450 3000 0    60   Input ~ 0
+VD[0..7]
+Wire Wire Line
+	4300 1850 4300 1700
+Wire Wire Line
+	4200 1850 4200 1700
+Wire Wire Line
+	4100 1850 4100 1700
+Wire Wire Line
+	4000 1850 4000 1700
+Wire Wire Line
+	3700 1850 3700 1700
+Wire Wire Line
+	3600 1850 3600 1700
+Wire Wire Line
+	3400 1850 3400 1700
+Wire Wire Line
+	3300 1850 3300 1700
+Wire Wire Line
+	3200 1850 3200 1700
+Wire Wire Line
+	2600 1850 2600 1700
+Wire Wire Line
+	2500 1850 2500 1700
+Text Label 4300 1700 1    60   ~ 0
+A0
+Text Label 4200 1700 1    60   ~ 0
+A1
+Text Label 4100 1700 1    60   ~ 0
+A2
+Text Label 4000 1700 1    60   ~ 0
+A3
+Text Label 3700 1700 1    60   ~ 0
+A4
+Text Label 3600 1700 1    60   ~ 0
+A5
+Text Label 3400 1700 1    60   ~ 0
+A6
+Text Label 3300 1700 1    60   ~ 0
+A7
+Text Label 3200 1700 1    60   ~ 0
+A8
+Text Label 2600 1700 1    60   ~ 0
+A9
+Text Label 2500 1700 1    60   ~ 0
+A10
+Entry Wire Line
+	10550 2400 10650 2500
+Entry Wire Line
+	10550 2300 10650 2400
+Entry Wire Line
+	10550 2200 10650 2300
+Entry Wire Line
+	10550 2100 10650 2200
+Entry Wire Line
+	10550 2000 10650 2100
+Wire Wire Line
+	10550 2000 10450 2000
+Wire Wire Line
+	10550 2100 10450 2100
+Wire Wire Line
+	10550 2200 10450 2200
+Wire Wire Line
+	10550 2300 10450 2300
+Wire Wire Line
+	10550 2400 10450 2400
+Entry Wire Line
+	10550 3100 10650 3200
+Entry Wire Line
+	10550 3000 10650 3100
+Entry Wire Line
+	10550 2900 10650 3000
+Entry Wire Line
+	10550 2800 10650 2900
+Entry Wire Line
+	10550 2700 10650 2800
+Wire Wire Line
+	10550 2700 10450 2700
+Wire Wire Line
+	10550 2800 10450 2800
+Wire Wire Line
+	10550 2900 10450 2900
+Wire Wire Line
+	10550 3000 10450 3000
+Wire Wire Line
+	10550 3100 10450 3100
+Entry Wire Line
+	10550 3800 10650 3900
+Entry Wire Line
+	10550 3700 10650 3800
+Entry Wire Line
+	10550 3600 10650 3700
+Entry Wire Line
+	10550 3500 10650 3600
+Entry Wire Line
+	10550 3400 10650 3500
+Wire Wire Line
+	10550 3400 10450 3400
+Wire Wire Line
+	10550 3500 10450 3500
+Wire Wire Line
+	10550 3600 10450 3600
+Wire Wire Line
+	10550 3700 10450 3700
+Wire Wire Line
+	10550 3800 10450 3800
+Text Label 10450 2000 0    60   ~ 0
+R4
+Text Label 10450 2100 0    60   ~ 0
+R3
+Text Label 10450 2200 0    60   ~ 0
+R2
+Text Label 10450 2300 0    60   ~ 0
+R1
+Text Label 10450 2400 0    60   ~ 0
+R0
+Text Label 10450 2700 0    60   ~ 0
+G4
+Text Label 10450 2800 0    60   ~ 0
+G3
+Text Label 10450 2900 0    60   ~ 0
+G2
+Text Label 10450 3000 0    60   ~ 0
+G1
+Text Label 10450 3100 0    60   ~ 0
+G0
+Text Label 10450 3400 0    60   ~ 0
+B4
+Text Label 10450 3500 0    60   ~ 0
+B3
+Text Label 10450 3600 0    60   ~ 0
+B2
+Text Label 10450 3700 0    60   ~ 0
+B1
+Text Label 10450 3800 0    60   ~ 0
+B0
+Text HLabel 10700 1900 2    60   Output ~ 0
+R[4..0]
+Text HLabel 10700 2600 2    60   Output ~ 0
+G[4..0]
+Text HLabel 10700 3300 2    60   Output ~ 0
+B[4..0]
+Wire Bus Line
+	10700 1900 10650 1900
+Wire Bus Line
+	10700 3300 10650 3300
+Wire Bus Line
+	10700 2600 10650 2600
+Wire Wire Line
+	3700 6350 3700 6500
+Wire Wire Line
+	3800 6350 3800 6500
+Wire Wire Line
+	3900 6350 3900 6500
+Wire Wire Line
+	4000 6350 4000 6500
+Wire Wire Line
+	4100 6350 4100 6500
+Wire Wire Line
+	4200 6350 4200 6500
+Wire Wire Line
+	4300 6350 4300 6500
+Wire Wire Line
+	4600 6350 4600 6500
+Wire Wire Line
+	4700 6350 4700 6500
+Wire Wire Line
+	4800 6350 4800 6500
+Wire Wire Line
+	5400 6350 5400 6500
+Wire Wire Line
+	5500 6350 5500 6500
+Wire Wire Line
+	5700 6350 5700 6500
+Wire Wire Line
+	5900 6350 5900 6500
+Wire Wire Line
+	6000 6350 6000 6500
+Text Label 3700 6500 3    60   ~ 0
+R4
+Text Label 3800 6500 3    60   ~ 0
+R3
+Text Label 3900 6500 3    60   ~ 0
+R2
+Text Label 4600 6500 3    60   ~ 0
+R1
+Text Label 4700 6500 3    60   ~ 0
+R0
+Text Label 4800 6500 3    60   ~ 0
+G4
+Text Label 5400 6500 3    60   ~ 0
+G3
+Text Label 5500 6500 3    60   ~ 0
+G2
+Text Label 5700 6500 3    60   ~ 0
+G1
+Text Label 5900 6500 3    60   ~ 0
+G0
+Text Label 6000 6500 3    60   ~ 0
+B4
+Wire Wire Line
+	6800 5550 7000 5550
+Wire Wire Line
+	6800 5450 7000 5450
+Text Label 7000 5550 0    60   ~ 0
+B3
+Text Label 7000 5450 0    60   ~ 0
+B2
+Wire Wire Line
+	6800 4850 7000 4850
+Wire Wire Line
+	6800 4650 7000 4650
+Wire Wire Line
+	6800 4550 7000 4550
+Wire Wire Line
+	6800 4450 7000 4450
+Text Label 7000 4850 0    60   ~ 0
+B1
+Text Label 7000 4650 0    60   ~ 0
+B0
+Text HLabel 1700 4450 0    60   Input ~ 0
+VSn
+Text HLabel 4000 6500 3    60   Input ~ 0
+HSn
+Wire Wire Line
+	1700 2950 1450 2950
+Wire Wire Line
+	1700 3250 1450 3250
+Wire Wire Line
+	1700 3350 1450 3350
+Text Label 1450 2950 0    60   ~ 0
+A11
+Text Label 1450 3250 0    60   ~ 0
+A12
+Text Label 1450 3350 0    60   ~ 0
+A13
+Wire Wire Line
+	3200 6350 3200 6500
+Text Label 3200 6500 3    60   ~ 0
+A14
+Text Label 4100 6500 3    60   ~ 0
+A15
+Text Label 4200 6500 3    60   ~ 0
+A16
+Text Label 4300 6500 3    60   ~ 0
+A17
+Text Label 7000 4550 0    60   ~ 0
+A18
+Text Label 7000 4450 0    60   ~ 0
+A19
+Wire Wire Line
+	6800 4350 7000 4350
+Wire Wire Line
+	6800 4250 7000 4250
+Wire Wire Line
+	6800 4150 7000 4150
+Wire Wire Line
+	6800 4050 7000 4050
+Text Label 7000 4350 0    60   ~ 0
+A20
+Text Label 7000 4250 0    60   ~ 0
+VD0
+Text Label 7000 4150 0    60   ~ 0
+VD1
+Text Label 7000 4050 0    60   ~ 0
+VD2
+Wire Wire Line
+	6800 3350 7000 3350
+Wire Wire Line
+	6800 3250 7000 3250
+Wire Wire Line
+	6800 3150 7000 3150
+Wire Wire Line
+	6800 3050 7000 3050
+Wire Wire Line
+	6800 2850 7000 2850
+Wire Wire Line
+	6800 2550 7000 2550
+Text Label 7000 3350 0    60   ~ 0
+VD3
+Text Label 7000 3250 0    60   ~ 0
+VD4
+Text Label 7000 3150 0    60   ~ 0
+VD5
+Text Label 7000 3050 0    60   ~ 0
+VD6
+Text Label 7000 2850 0    60   ~ 0
+VD7
+Wire Bus Line
+	10650 1900 10650 2500
+Wire Bus Line
+	10650 2600 10650 3200
+Wire Bus Line
+	10650 3300 10650 3900
+Wire Bus Line
+	9450 3000 9450 3800
+Wire Bus Line
+	9500 1950 9500 2750
+Wire Bus Line
+	10000 1800 10000 3900
 $EndSCHEMATC
