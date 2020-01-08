@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:pcehd-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -1614,7 +1615,7 @@ F 3 "" H 4700 1100 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 Text HLabel 1700 4550 0    60   Input ~ 0
-DCKSI
+SI_CLK1
 Wire Wire Line
 	2800 1200 2800 1850
 Wire Wire Line
@@ -1916,7 +1917,6 @@ Text HLabel 3400 6350 3    60   Output ~ 0
 CDD
 Text HLabel 6800 5150 2    60   Output ~ 0
 RST_N
-NoConn ~ 6800 2650
 Entry Wire Line
 	9500 2750 9600 2850
 Entry Wire Line
@@ -2377,8 +2377,6 @@ Wire Wire Line
 	6800 3050 7000 3050
 Wire Wire Line
 	6800 2850 7000 2850
-Wire Wire Line
-	6800 2550 7000 2550
 Text Label 7000 3350 0    60   ~ 0
 VD3
 Text Label 7000 3250 0    60   ~ 0
@@ -2389,6 +2387,9 @@ Text Label 7000 3050 0    60   ~ 0
 VD6
 Text Label 7000 2850 0    60   ~ 0
 VD7
+NoConn ~ 6800 2650
+Text HLabel 6800 2550 2    60   Output ~ 0
+DCKFB
 Wire Bus Line
 	10650 1900 10650 2500
 Wire Bus Line
