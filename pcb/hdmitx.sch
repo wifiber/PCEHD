@@ -4,9 +4,9 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 5
+Sheet 3 5
 Title "PCEHD"
-Date "2020-01-03"
+Date "2020-01-12"
 Rev "0.1"
 Comp ""
 Comment1 ""
@@ -469,9 +469,11 @@ Text HLabel 10450 1150 0    60   Input ~ 0
 Text Label 10600 1150 0    60   ~ 0
 5V
 $Comp
-L HDMI:ADV7513 U2
+L pcehd-rescue:ADV7513-HDMI U2
 U 1 1 5A38E9E6
 P 3750 6300
+AR Path="/5A38E9E6" Ref="U2"  Part="1" 
+AR Path="/54FF6758/5A38E9E6" Ref="U2"  Part="1" 
 F 0 "U2" H 3750 6450 50  0000 C CNN
 F 1 "ADV7513" H 3750 6350 50  0000 C CNN
 F 2 "custom_components:LQFP-64-1EP_10x10mm_Pitch0.5mm_Handsoldering" H 3600 6650 50  0001 C CNN
@@ -482,7 +484,7 @@ F 5 "1.0" H 3050 6850 50  0001 C CNN "Version"
 	1    0    0    -1  
 $EndComp
 $Comp
-L HDMI:ADV7513 U2
+L custom_components:ADV7513 U2
 U 2 1 5A38EC28
 P 3800 950
 F 0 "U2" H 3800 1100 50  0000 C CNN
@@ -835,8 +837,6 @@ Wire Wire Line
 	2650 2100 2800 2100
 Wire Wire Line
 	2650 2000 2800 2000
-Wire Wire Line
-	2200 1800 2800 1800
 Wire Wire Line
 	2200 1700 2800 1700
 Wire Wire Line
@@ -1481,6 +1481,14 @@ Wire Bus Line
 	2350 4050 2250 4050
 Text HLabel 2250 4050 0    60   Input ~ 0
 B[4..0]
+Text HLabel 2200 1300 0    60   Input ~ 0
+I2S_DATA
+Text HLabel 2200 1700 0    60   Input ~ 0
+I2S_BCK
+Text HLabel 2150 1800 0    60   Input ~ 0
+I2S_WS
+Wire Wire Line
+	2150 1800 2800 1800
 Wire Bus Line
 	2350 2350 2350 3050
 Wire Bus Line

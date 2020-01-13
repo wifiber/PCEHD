@@ -1,4 +1,4 @@
-16368882104014566
+16373620269414566
 Andrew-Custom
 8AWG_WIRE_THROUGH_1Pin
 Single banana socket, footprint - 6mm drill
@@ -73003,6 +73003,13 @@ PB_SW_M7
 2
 2
 custom_components
+PCM1808PWR
+
+
+0
+14
+14
+custom_components
 QFN-20-1EP_4x4mm_Pitch0.5mm_Handsoldering
 20-Lead Plastic Quad Flat, No Lead Package (ML) - 4x4x0.9 mm Body [QFN]; (see Microchip Packaging Specification 00000049BS.pdf)
 QFN 0.5
@@ -73072,6 +73079,20 @@ SMD_PAD
 0
 1
 1
+custom_components
+SN74LVC8T245MPWREP
+
+
+0
+24
+24
+custom_components
+SN74LVCC4245APW
+
+
+0
+24
+24
 custom_components
 SOD-323_Handsoldering
 SOD-323

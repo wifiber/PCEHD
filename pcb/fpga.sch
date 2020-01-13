@@ -1614,8 +1614,6 @@ F 3 "" H 4700 1100 60  0000 C CNN
 	1    4700 1100
 	-1   0    0    1   
 $EndComp
-Text HLabel 1700 4550 0    60   Input ~ 0
-SI_CLK1
 Wire Wire Line
 	2800 1200 2800 1850
 Wire Wire Line
@@ -1905,14 +1903,10 @@ Wire Wire Line
 	10600 6600 10800 6600
 Wire Wire Line
 	9450 6600 9750 6600
-Text HLabel 1700 5050 0    60   Input ~ 0
-CS
 Text HLabel 1700 5350 0    60   Input ~ 0
 CEK
 Text HLabel 1700 5450 0    60   Input ~ 0
 WR_N
-Text HLabel 1700 5550 0    60   Input ~ 0
-XRD
 Text HLabel 3400 6350 3    60   Output ~ 0
 CDD
 Text HLabel 6800 5150 2    60   Output ~ 0
@@ -2256,8 +2250,6 @@ Wire Wire Line
 Wire Wire Line
 	3900 6350 3900 6500
 Wire Wire Line
-	4000 6350 4000 6500
-Wire Wire Line
 	4100 6350 4100 6500
 Wire Wire Line
 	4200 6350 4200 6500
@@ -2321,10 +2313,6 @@ Text Label 7000 4850 0    60   ~ 0
 B1
 Text Label 7000 4650 0    60   ~ 0
 B0
-Text HLabel 1700 4450 0    60   Input ~ 0
-VSn
-Text HLabel 4000 6500 3    60   Input ~ 0
-HSn
 Wire Wire Line
 	1700 2950 1450 2950
 Wire Wire Line
@@ -2390,6 +2378,14 @@ VD7
 NoConn ~ 6800 2650
 Text HLabel 6800 2550 2    60   Output ~ 0
 DCKFB
+Text HLabel 1700 5050 0    60   Input ~ 0
+CS
+Text HLabel 1700 4450 0    60   Input ~ 0
+SI_CLK0
+Text HLabel 1700 4550 0    60   Input ~ 0
+SI_CLK1
+NoConn ~ 4000 6350
+NoConn ~ 1700 5550
 Wire Bus Line
 	10650 1900 10650 2500
 Wire Bus Line
