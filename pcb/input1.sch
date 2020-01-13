@@ -110,7 +110,7 @@ CDD_I
 Text HLabel 4850 6850 2    60   Output ~ 0
 CEK_O
 Text HLabel 9300 1500 2    60   BiDi ~ 0
-D[0..7]
+D[7..0]
 Entry Wire Line
 	9100 2500 9200 2600
 Entry Wire Line
@@ -128,21 +128,21 @@ Entry Wire Line
 Entry Wire Line
 	9100 1800 9200 1900
 Text Label 8950 1800 0    60   ~ 0
-D0
-Text Label 8950 1900 0    60   ~ 0
-D1
-Text Label 8950 2000 0    60   ~ 0
-D2
-Text Label 8950 2100 0    60   ~ 0
-D3
-Text Label 8950 2200 0    60   ~ 0
-D4
-Text Label 8950 2300 0    60   ~ 0
-D5
-Text Label 8950 2400 0    60   ~ 0
-D6
-Text Label 8950 2500 0    60   ~ 0
 D7
+Text Label 8950 1900 0    60   ~ 0
+D6
+Text Label 8950 2000 0    60   ~ 0
+D5
+Text Label 8950 2100 0    60   ~ 0
+D4
+Text Label 8950 2200 0    60   ~ 0
+D3
+Text Label 8950 2300 0    60   ~ 0
+D2
+Text Label 8950 2400 0    60   ~ 0
+D1
+Text Label 8950 2500 0    60   ~ 0
+D0
 Entry Wire Line
 	4750 4650 4850 4750
 Entry Wire Line
@@ -176,21 +176,21 @@ Entry Wire Line
 Entry Wire Line
 	4750 1850 4850 1950
 Text Label 4600 1850 0    60   ~ 0
-A0
+A19
 Text Label 4600 1950 0    60   ~ 0
-A1
+A15
 Text Label 4600 2050 0    60   ~ 0
-A2
+A16
 Text Label 4600 2150 0    60   ~ 0
-A3
+A12
 Text Label 4600 2250 0    60   ~ 0
-A4
-Text Label 4600 2350 0    60   ~ 0
-A5
-Text Label 4600 2450 0    60   ~ 0
 A6
-Text Label 4600 2550 0    60   ~ 0
+Text Label 4600 2350 0    60   ~ 0
 A7
+Text Label 4600 2450 0    60   ~ 0
+A4
+Text Label 4600 2550 0    60   ~ 0
+A5
 Text HLabel 4850 6650 2    60   Output ~ 0
 WR_N_O
 Entry Wire Line
@@ -202,19 +202,19 @@ Entry Wire Line
 Entry Wire Line
 	4750 6350 4850 6450
 Text Label 4600 6050 0    60   ~ 0
-A16
+A9
 Text Label 4600 6150 0    60   ~ 0
 A17
 Text Label 4600 6250 0    60   ~ 0
-A18
+A14
 Text Label 4600 6350 0    60   ~ 0
-A19
+A18
 Entry Wire Line
 	4750 6450 4850 6550
 Text Label 4600 6450 0    60   ~ 0
 A20
 Text HLabel 4950 1650 2    60   Output ~ 0
-A[0..20]
+A[20..0]
 Wire Bus Line
 	4950 1650 4850 1650
 Wire Bus Line
@@ -913,21 +913,21 @@ Wire Wire Line
 Wire Wire Line
 	4400 2550 4750 2550
 Text Label 4600 4650 0    60   ~ 0
-A15
-Text Label 4600 4550 0    60   ~ 0
-A14
-Text Label 4600 4450 0    60   ~ 0
-A13
-Text Label 4600 4350 0    60   ~ 0
-A12
-Text Label 4600 4250 0    60   ~ 0
-A11
-Text Label 4600 4150 0    60   ~ 0
-A10
-Text Label 4600 4050 0    60   ~ 0
-A9
-Text Label 4600 3950 0    60   ~ 0
 A8
+Text Label 4600 4550 0    60   ~ 0
+A13
+Text Label 4600 4450 0    60   ~ 0
+A10
+Text Label 4600 4350 0    60   ~ 0
+A11
+Text Label 4600 4250 0    60   ~ 0
+A0
+Text Label 4600 4150 0    60   ~ 0
+A2
+Text Label 4600 4050 0    60   ~ 0
+A1
+Text Label 4600 3950 0    60   ~ 0
+A3
 Wire Wire Line
 	4400 3950 4750 3950
 Wire Wire Line
@@ -1244,9 +1244,6 @@ Wire Wire Line
 	1800 7250 1800 7200
 Wire Wire Line
 	1750 7200 1800 7200
-Connection ~ 1800 7200
-Wire Wire Line
-	1800 7200 2050 7200
 Wire Wire Line
 	2350 7450 2350 7500
 Wire Wire Line
@@ -1460,13 +1457,13 @@ Text Label 3050 3300 1    60   ~ 0
 5V
 Wire Wire Line
 	2000 6950 2350 6950
-Connection ~ 2050 7200
-Wire Wire Line
-	2050 7200 2500 7200
 Wire Wire Line
 	1900 7450 2350 7450
 Wire Wire Line
 	1800 7450 2350 7450
+Wire Wire Line
+	1800 7200 2050 7200
+Connection ~ 1800 7200
 Wire Bus Line
 	9550 5600 9550 6550
 Wire Bus Line
