@@ -21,7 +21,7 @@ DCK
 Text HLabel 1650 5700 0    60   Input ~ 0
 HSn
 Text Label 1950 5700 0    60   ~ 0
-HSn
+HSn_buf
 Text Label 1950 5500 0    60   ~ 0
 DCK
 NoConn ~ 2400 5000
@@ -190,10 +190,8 @@ Text Label 5000 6250 0    60   ~ 0
 SCL
 Text Label 5000 6350 0    60   ~ 0
 SDA
-Wire Wire Line
-	6900 6650 7250 6650
-Text Label 7050 6650 0    60   ~ 0
-HSn
+Text Label 7000 6650 0    60   ~ 0
+HSn_buf
 $Comp
 L pcehd-rescue:GND-power #PWR?
 U 1 1 5E1D2603
@@ -1148,4 +1146,6 @@ Wire Wire Line
 	8500 2400 5800 2400
 Wire Wire Line
 	5800 2400 5800 1950
+Wire Wire Line
+	6900 6650 7350 6650
 $EndSCHEMATC
