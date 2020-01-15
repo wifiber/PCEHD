@@ -15,4 +15,10 @@ D Double Pole Single Throw (DPST) Switch
 K switch dual double-pole single-throw OFF-ON
 $ENDCMP
 #
+$CMP Micro_SD_Card
+D Micro SD Card Socket
+K connector SD microsd
+F http://katalog.we-online.de/em/datasheet/693072010801.pdf
+$ENDCMP
+#
 #End Doc Library

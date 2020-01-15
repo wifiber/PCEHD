@@ -817,9 +817,9 @@ F 3 "" H 3150 850 60  0000 C CNN
 	1    3150 850 
 	-1   0    0    1   
 $EndComp
-Text HLabel 850  7450 0    60   BiDi ~ 0
+Text HLabel 950  1350 0    60   BiDi ~ 0
 SDA
-Text HLabel 850  7550 0    60   Output ~ 0
+Text HLabel 950  1450 0    60   Output ~ 0
 SCL
 Text HLabel 1300 3250 0    60   Output ~ 0
 DDIR
@@ -851,11 +851,11 @@ Text HLabel 1050 4650 0    60   Input ~ 0
 SPBG
 Text HLabel 5300 6350 3    60   Input ~ 0
 HDMITX_INT_N
-Text HLabel 2700 6350 3    60   Output ~ 0
+Text HLabel 3400 6500 3    60   Output ~ 0
 HDMITX_VSYNC
-Text HLabel 3000 6350 3    60   Output ~ 0
+Text HLabel 3700 6500 3    60   Output ~ 0
 HDMITX_HSYNC
-Text HLabel 3100 6350 3    60   Output ~ 0
+Text HLabel 3800 6500 3    60   Output ~ 0
 HDMITX_DE
 Text HLabel 4700 6500 3    60   Output ~ 0
 HDMITX_PCLK
@@ -1300,9 +1300,9 @@ Text Notes 9850 4850 0    60   ~ 0
 max. 200mA
 Text HLabel 10850 4650 2    60   Input ~ 0
 VCCIO
-Text Label 1700 7450 2    60   ~ 0
+Text Label 1800 1350 2    60   ~ 0
 SDA
-Text Label 1700 7550 2    60   ~ 0
+Text Label 1800 1450 2    60   ~ 0
 SCL
 $Comp
 L pcehd-rescue:C-Device C73
@@ -1398,26 +1398,26 @@ VCCIO
 $Comp
 L pcehd-rescue:R-Device R10
 U 1 1 57E9E8FA
-P 1000 7150
-F 0 "R10" V 1080 7150 50  0000 C CNN
-F 1 "2.2k" V 1000 7150 50  0000 C CNN
-F 2 "custom_components:SM0603_Resistor_libcms" V 930 7150 50  0001 C CNN
-F 3 "" H 1000 7150 50  0000 C CNN
-	1    1000 7150
+P 1100 1050
+F 0 "R10" V 1180 1050 50  0000 C CNN
+F 1 "2.2k" V 1100 1050 50  0000 C CNN
+F 2 "custom_components:SM0603_Resistor_libcms" V 1030 1050 50  0001 C CNN
+F 3 "" H 1100 1050 50  0000 C CNN
+	1    1100 1050
 	1    0    0    -1  
 $EndComp
 $Comp
 L pcehd-rescue:R-Device R9
 U 1 1 57E9EBFC
-P 800 7150
-F 0 "R9" V 880 7150 50  0000 C CNN
-F 1 "2.2k" V 800 7150 50  0000 C CNN
-F 2 "custom_components:SM0603_Resistor_libcms" V 730 7150 50  0001 C CNN
-F 3 "" H 800 7150 50  0000 C CNN
-	1    800  7150
+P 900 1050
+F 0 "R9" V 980 1050 50  0000 C CNN
+F 1 "2.2k" V 900 1050 50  0000 C CNN
+F 2 "custom_components:SM0603_Resistor_libcms" V 830 1050 50  0001 C CNN
+F 3 "" H 900 1050 50  0000 C CNN
+	1    900  1050
 	1    0    0    -1  
 $EndComp
-Text Label 850  6900 0    60   ~ 0
+Text Label 950  800  0    60   ~ 0
 VCCIO
 Text HLabel 4100 1400 1    60   Input ~ 0
 DCK
@@ -1675,26 +1675,26 @@ Wire Wire Line
 	8750 1200 8650 1200
 Wire Wire Line
 	8750 1300 8650 1300
-Connection ~ 1000 7550
+Connection ~ 1100 1450
 Wire Wire Line
-	850  7550 1000 7550
+	950  1450 1100 1450
 Wire Wire Line
-	1000 7300 1000 7550
-Connection ~ 900  7450
+	1100 1200 1100 1450
+Connection ~ 1000 1350
 Wire Wire Line
-	850  7450 900  7450
+	950  1350 1000 1350
 Wire Wire Line
-	900  7350 900  7450
+	1000 1250 1000 1350
 Wire Wire Line
-	800  7350 900  7350
+	900  1250 1000 1250
 Wire Wire Line
-	800  7300 800  7350
+	900  1200 900  1250
 Wire Wire Line
-	1000 6900 1000 7000
+	1100 800  1100 900 
 Wire Wire Line
-	800  6900 1000 6900
+	900  800  1100 800 
 Wire Wire Line
-	800  6900 800  7000
+	900  800  900  900 
 Wire Wire Line
 	1700 4850 1400 4850
 Wire Wire Line
@@ -1876,9 +1876,9 @@ Wire Wire Line
 Wire Wire Line
 	10050 5400 9450 5400
 Wire Wire Line
-	1000 7550 1900 7550
+	1100 1450 2000 1450
 Wire Wire Line
-	900  7450 2000 7450
+	1000 1350 2100 1350
 Wire Wire Line
 	8850 5050 8850 5800
 Wire Wire Line
@@ -1903,10 +1903,8 @@ Text HLabel 1050 4750 0    60   Input ~ 0
 CEK
 Text HLabel 1050 4550 0    60   Input ~ 0
 WR_N
-Text HLabel 1000 5050 0    60   Output ~ 0
-CDD
 Text HLabel 1000 5350 0    60   Output ~ 0
-RST_N
+RST_N_O
 Entry Wire Line
 	9500 2750 9600 2850
 Entry Wire Line
@@ -2137,14 +2135,6 @@ Entry Wire Line
 	10550 2300 10650 2400
 Entry Wire Line
 	10550 2200 10650 2300
-Entry Wire Line
-	10550 2100 10650 2200
-Entry Wire Line
-	10550 2000 10650 2100
-Wire Wire Line
-	10550 2000 10450 2000
-Wire Wire Line
-	10550 2100 10450 2100
 Wire Wire Line
 	10550 2200 10450 2200
 Wire Wire Line
@@ -2157,14 +2147,6 @@ Entry Wire Line
 	10550 3000 10650 3100
 Entry Wire Line
 	10550 2900 10650 3000
-Entry Wire Line
-	10550 2800 10650 2900
-Entry Wire Line
-	10550 2700 10650 2800
-Wire Wire Line
-	10550 2700 10450 2700
-Wire Wire Line
-	10550 2800 10450 2800
 Wire Wire Line
 	10550 2900 10450 2900
 Wire Wire Line
@@ -2177,44 +2159,22 @@ Entry Wire Line
 	10550 3700 10650 3800
 Entry Wire Line
 	10550 3600 10650 3700
-Entry Wire Line
-	10550 3500 10650 3600
-Entry Wire Line
-	10550 3400 10650 3500
-Wire Wire Line
-	10550 3400 10450 3400
-Wire Wire Line
-	10550 3500 10450 3500
 Wire Wire Line
 	10550 3600 10450 3600
 Wire Wire Line
 	10550 3700 10450 3700
 Wire Wire Line
 	10550 3800 10450 3800
-Text Label 10450 2000 0    60   ~ 0
-R4
-Text Label 10450 2100 0    60   ~ 0
-R3
-Text Label 10450 2200 0    60   ~ 0
-R2
 Text Label 10450 2300 0    60   ~ 0
 R1
 Text Label 10450 2400 0    60   ~ 0
 R0
-Text Label 10450 2700 0    60   ~ 0
-G4
-Text Label 10450 2800 0    60   ~ 0
-G3
 Text Label 10450 2900 0    60   ~ 0
 G2
 Text Label 10450 3000 0    60   ~ 0
 G1
 Text Label 10450 3100 0    60   ~ 0
 G0
-Text Label 10450 3400 0    60   ~ 0
-B4
-Text Label 10450 3500 0    60   ~ 0
-B3
 Text Label 10450 3600 0    60   ~ 0
 B2
 Text Label 10450 3700 0    60   ~ 0
@@ -2222,11 +2182,11 @@ B1
 Text Label 10450 3800 0    60   ~ 0
 B0
 Text HLabel 10700 1900 2    60   Output ~ 0
-R[4..0]
+R[2..0]
 Text HLabel 10700 2600 2    60   Output ~ 0
-G[4..0]
+G[2..0]
 Text HLabel 10700 3300 2    60   Output ~ 0
-B[4..0]
+B[2..0]
 Wire Bus Line
 	10700 1900 10650 1900
 Wire Bus Line
@@ -2255,35 +2215,23 @@ Wire Wire Line
 	5900 6350 5900 6500
 Wire Wire Line
 	6000 6350 6000 6500
-Text Label 6000 6500 3    60   ~ 0
-R4
-Text Label 5900 6500 3    60   ~ 0
-R3
 Text Label 5700 6500 3    60   ~ 0
 R2
-Text Label 7000 5450 0    60   ~ 0
+Text Label 6000 6500 3    60   ~ 0
 R1
-Text Label 7000 5550 0    60   ~ 0
+Text Label 5900 6500 3    60   ~ 0
 R0
 Text Label 5400 6500 3    60   ~ 0
-G4
-Text Label 4800 6500 3    60   ~ 0
-G3
-Text Label 4600 6500 3    60   ~ 0
 G2
-Text Label 5600 6350 3    60   ~ 0
+Text Label 5600 6500 3    60   ~ 0
 G1
 Text Label 5500 6500 3    60   ~ 0
 G0
-Text Label 3700 6500 3    60   ~ 0
-B4
 Wire Wire Line
 	6800 5550 7000 5550
 Wire Wire Line
 	6800 5450 7000 5450
-Text Label 3400 6350 3    60   ~ 0
-B3
-Text Label 3200 6500 3    60   ~ 0
+Text Label 3900 6500 3    60   ~ 0
 B2
 Wire Wire Line
 	6800 4850 7000 4850
@@ -2293,9 +2241,9 @@ Wire Wire Line
 	6800 4550 7000 4550
 Wire Wire Line
 	6800 4450 7000 4450
-Text Label 3900 6500 3    60   ~ 0
+Text Label 4800 6500 3    60   ~ 0
 B1
-Text Label 3800 6500 3    60   ~ 0
+Text Label 4600 6500 3    60   ~ 0
 B0
 Wire Wire Line
 	1700 2950 1450 2950
@@ -2305,12 +2253,8 @@ Text Label 7000 3350 0    60   ~ 0
 A12
 Text Label 5400 1700 1    60   ~ 0
 A13
-Wire Wire Line
-	3200 6350 3200 6500
 Text Label 2600 1700 1    60   ~ 0
 A14
-Text Label 4100 6500 3    60   ~ 0
-A15
 Text Label 7000 4050 0    60   ~ 0
 A16
 Text Label 2700 1700 1    60   ~ 0
@@ -2387,9 +2331,9 @@ Wire Wire Line
 	1050 4750 1700 4750
 Wire Wire Line
 	1700 5450 1250 5450
-Text Label 1400 5450 0    60   ~ 0
+Text Label 6800 5450 0    60   ~ 0
 SDA
-Text Label 1400 5550 0    60   ~ 0
+Text Label 6800 5550 0    60   ~ 0
 SCL
 Wire Wire Line
 	1700 5550 1250 5550
@@ -2403,9 +2347,108 @@ Wire Wire Line
 	1000 5050 1700 5050
 Wire Wire Line
 	1000 5350 1700 5350
-NoConn ~ 4200 6350
 NoConn ~ 4300 6350
-NoConn ~ 1700 4450
+Text HLabel 1050 4450 0    60   Input ~ 0
+XRD
+Text HLabel 4200 6500 3    60   Input ~ 0
+HuID_N
+Text HLabel 1000 5050 0    60   Output ~ 0
+HuID_N_O
+Wire Wire Line
+	1700 4450 1050 4450
+Wire Wire Line
+	4200 6500 4200 6350
+Wire Wire Line
+	5600 6350 5600 6500
+Wire Wire Line
+	3400 6350 3400 6500
+Text Label 4100 6500 3    60   ~ 0
+A15
+Text Label 10450 2200 0    60   ~ 0
+R2
+$Comp
+L custom_components:Micro_SD_Card J2
+U 1 1 5E250FE8
+P 2200 6850
+F 0 "J2" H 2030 6846 50  0000 L CNN
+F 1 "Micro_SD_Card" H 1450 7350 50  0000 L CNN
+F 2 "Connector_Card:microSD_HC_Hirose_DM3D-SF" H 3350 7150 50  0001 C CNN
+F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 2200 6850 50  0001 C CNN
+	1    2200 6850
+	1    0    0    -1  
+$EndComp
+Text Label 1050 6550 0    60   ~ 0
+DAT2
+Wire Wire Line
+	1300 6550 1050 6550
+Wire Wire Line
+	3200 6350 3200 6750
+Wire Wire Line
+	3100 6350 3100 6750
+Wire Wire Line
+	3000 6350 3000 6750
+Wire Wire Line
+	2700 6350 2700 6750
+Text Label 3200 6750 1    60   ~ 0
+DAT2
+Wire Wire Line
+	1300 6650 1050 6650
+Text Label 1050 6650 0    60   ~ 0
+DAT3
+Text Label 3100 6750 1    60   ~ 0
+DAT3
+Wire Wire Line
+	1300 6750 1050 6750
+Text Label 1050 6750 0    60   ~ 0
+CMD
+Text Label 3000 6750 1    60   ~ 0
+CMD
+Wire Wire Line
+	1300 6950 1050 6950
+Wire Wire Line
+	1300 6850 1050 6850
+Wire Wire Line
+	1300 7150 1050 7150
+Wire Wire Line
+	1300 7250 1050 7250
+$Comp
+L pcehd-rescue:GND-power #PWR0177
+U 1 1 5E308DE0
+P 1300 7400
+F 0 "#PWR0177" H 1300 7400 30  0001 C CNN
+F 1 "GND" H 1300 7330 30  0001 C CNN
+F 2 "" H 1300 7400 60  0001 C CNN
+F 3 "" H 1300 7400 60  0000 C CNN
+	1    1300 7400
+	1    0    0    -1  
+$EndComp
+Text Label 1050 6850 0    60   ~ 0
+VCCIO
+Text Label 1050 6950 0    60   ~ 0
+SCLK
+Text Label 2700 6750 1    60   ~ 0
+SCLK
+$Comp
+L pcehd-rescue:GND-power #PWR0178
+U 1 1 5E30B02E
+P 850 7050
+F 0 "#PWR0178" H 850 7050 30  0001 C CNN
+F 1 "GND" H 850 6980 30  0001 C CNN
+F 2 "" H 850 7050 60  0001 C CNN
+F 3 "" H 850 7050 60  0000 C CNN
+	1    850  7050
+	1    0    0    -1  
+$EndComp
+Text Label 1050 7150 0    60   ~ 0
+DAT0
+Wire Wire Line
+	1300 7050 850  7050
+Text Label 1250 5550 0    60   ~ 0
+DAT0
+Text Label 1050 7250 0    60   ~ 0
+DAT1
+Text Label 1250 5450 0    60   ~ 0
+DAT1
 Wire Bus Line
 	10650 1900 10650 2500
 Wire Bus Line

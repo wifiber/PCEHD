@@ -1358,23 +1358,23 @@ Wire Wire Line
 Wire Bus Line
 	2350 2350 2250 2350
 Text Label 2600 2450 0    60   ~ 0
-R4
+R2
 Text Label 2600 2550 0    60   ~ 0
-R3
-Text Label 2600 2650 0    60   ~ 0
-R2
-Text Label 2600 2750 0    60   ~ 0
 R1
-Text Label 2600 2850 0    60   ~ 0
+Text Label 2600 2650 0    60   ~ 0
 R0
-Text Label 2600 2950 0    60   ~ 0
-R4
-Text Label 2600 3050 0    60   ~ 0
-R3
-Text Label 2600 3150 0    60   ~ 0
+Text Label 2600 2750 0    60   ~ 0
 R2
+Text Label 2600 2850 0    60   ~ 0
+R1
+Text Label 2600 2950 0    60   ~ 0
+R0
+Text Label 2600 3050 0    60   ~ 0
+R2
+Text Label 2600 3150 0    60   ~ 0
+R1
 Text HLabel 2250 2350 0    60   Input ~ 0
-R[4..0]
+R[2..0]
 Entry Wire Line
 	2350 3900 2450 4000
 Entry Wire Line
@@ -1408,25 +1408,25 @@ Wire Wire Line
 Wire Wire Line
 	2450 4000 2800 4000
 Text Label 2600 3300 0    60   ~ 0
-G4
+G2
 Text Label 2600 3400 0    60   ~ 0
-G3
-Text Label 2600 3500 0    60   ~ 0
-G2
-Text Label 2600 3600 0    60   ~ 0
 G1
-Text Label 2600 3700 0    60   ~ 0
+Text Label 2600 3500 0    60   ~ 0
 G0
-Text Label 2600 3800 0    60   ~ 0
-G4
-Text Label 2600 3900 0    60   ~ 0
-G3
-Text Label 2600 4000 0    60   ~ 0
+Text Label 2600 3600 0    60   ~ 0
 G2
+Text Label 2600 3700 0    60   ~ 0
+G1
+Text Label 2600 3800 0    60   ~ 0
+G0
+Text Label 2600 3900 0    60   ~ 0
+G2
+Text Label 2600 4000 0    60   ~ 0
+G1
 Wire Bus Line
 	2350 3200 2250 3200
 Text HLabel 2250 3200 0    60   Input ~ 0
-G[4..0]
+G[2..0]
 Wire Wire Line
 	1900 5200 2800 5200
 Entry Wire Line
@@ -1462,25 +1462,25 @@ Wire Wire Line
 Wire Wire Line
 	2450 4850 2800 4850
 Text Label 2600 4150 0    60   ~ 0
-B4
+B2
 Text Label 2600 4250 0    60   ~ 0
-B3
-Text Label 2600 4350 0    60   ~ 0
-B2
-Text Label 2600 4450 0    60   ~ 0
 B1
-Text Label 2600 4550 0    60   ~ 0
+Text Label 2600 4350 0    60   ~ 0
 B0
-Text Label 2600 4650 0    60   ~ 0
-B4
-Text Label 2600 4750 0    60   ~ 0
-B3
-Text Label 2600 4850 0    60   ~ 0
+Text Label 2600 4450 0    60   ~ 0
 B2
+Text Label 2600 4550 0    60   ~ 0
+B1
+Text Label 2600 4650 0    60   ~ 0
+B0
+Text Label 2600 4750 0    60   ~ 0
+B2
+Text Label 2600 4850 0    60   ~ 0
+B1
 Wire Bus Line
 	2350 4050 2250 4050
 Text HLabel 2250 4050 0    60   Input ~ 0
-B[4..0]
+B[2..0]
 Text HLabel 2200 1300 0    60   Input ~ 0
 I2S_DATA
 Text HLabel 2200 1700 0    60   Input ~ 0
