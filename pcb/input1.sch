@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:pcehd-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -479,7 +478,7 @@ Wire Wire Line
 Text HLabel 8000 2350 2    60   Output ~ 0
 CS_O
 $Comp
-L Device:R_Small R28
+L pcehd-rescue:R_Small-Device R28
 U 1 1 5E20B4F6
 P 2600 6150
 F 0 "R28" H 2550 6200 50  0000 L CNN
@@ -497,7 +496,7 @@ Connection ~ 2700 5950
 Wire Wire Line
 	2700 5950 2700 5500
 $Comp
-L Device:R_Small R27
+L pcehd-rescue:R_Small-Device R27
 U 1 1 5E220BE1
 P 2600 4050
 F 0 "R27" H 2550 4100 50  0000 L CNN
@@ -638,7 +637,7 @@ $EndComp
 Wire Wire Line
 	2700 2050 2600 2050
 $Comp
-L Device:R_Small R22
+L pcehd-rescue:R_Small-Device R22
 U 1 1 5E4396BE
 P 2600 1950
 F 0 "R22" H 2550 2000 50  0000 L CNN
@@ -1107,7 +1106,7 @@ F 3 "" H 8000 1550 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R26
+L pcehd-rescue:R_Small-Device R26
 U 1 1 5E1D0EB3
 P 6450 1250
 F 0 "R26" H 6250 1300 50  0000 L CNN
@@ -1358,7 +1357,7 @@ F 3 "" H 6650 4550 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small R29
+L pcehd-rescue:R_Small-Device R29
 U 1 1 610BFA1D
 P 6400 3450
 F 0 "R29" H 6459 3496 50  0000 L CNN
@@ -1430,7 +1429,7 @@ Wire Wire Line
 Wire Wire Line
 	10000 5950 10350 5950
 $Comp
-L Transistor_BJT:BC847 Q1
+L pcehd-rescue:BC847-Transistor_BJT Q1
 U 1 1 5F31D333
 P 10250 6200
 F 0 "Q1" H 10441 6246 50  0000 L CNN
@@ -1465,7 +1464,7 @@ F 3 "" H 10350 6500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R23
+L pcehd-rescue:R_Small-Device R23
 U 1 1 5F31D320
 P 9650 6200
 F 0 "R23" V 9750 6150 50  0000 C CNN
@@ -1476,7 +1475,7 @@ F 3 "~" H 9650 6200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small R30
+L pcehd-rescue:R_Small-Device R30
 U 1 1 5F31D31A
 P 9800 6350
 F 0 "R30" H 9859 6396 50  0000 L CNN
@@ -1496,7 +1495,7 @@ Wire Wire Line
 Wire Wire Line
 	9950 4850 10300 4850
 $Comp
-L Transistor_BJT:BC847 Q2
+L pcehd-rescue:BC847-Transistor_BJT Q2
 U 1 1 60FF82DE
 P 10200 5100
 F 0 "Q2" H 10391 5146 50  0000 L CNN
@@ -1531,7 +1530,7 @@ F 3 "" H 10300 5400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R24
+L pcehd-rescue:R_Small-Device R24
 U 1 1 60C571BE
 P 9600 5100
 F 0 "R24" V 9700 5050 50  0000 C CNN
@@ -1542,7 +1541,7 @@ F 3 "~" H 9600 5100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small R25
+L pcehd-rescue:R_Small-Device R25
 U 1 1 60C54728
 P 9750 5250
 F 0 "R25" H 9809 5296 50  0000 L CNN

@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:pcehd-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -303,7 +302,7 @@ Connection ~ 8500 5650
 Wire Wire Line
 	8500 5500 8500 5650
 $Comp
-L Device:R_Small R?
+L pcehd-rescue:R_Small-Device R?
 U 1 1 6105F10D
 P 8500 5400
 AR Path="/5A43CDD8/6105F10D" Ref="R?"  Part="1" 
@@ -316,7 +315,7 @@ F 3 "~" H 8500 5400 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_Small R?
+L pcehd-rescue:R_Small-Device R?
 U 1 1 6105F107
 P 8600 5400
 AR Path="/5A43CDD8/6105F107" Ref="R?"  Part="1" 
@@ -355,7 +354,7 @@ F 3 "" H 8100 5700 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Jumper:SolderJumper_2_Open JP?
+L pcehd-rescue:SolderJumper_2_Open-Jumper JP?
 U 1 1 6105F0F4
 P 8300 5750
 AR Path="/5A43CDD8/6105F0F4" Ref="JP?"  Part="1" 
@@ -368,7 +367,7 @@ F 3 "~" H 8300 5750 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Jumper:SolderJumper_2_Open JP?
+L pcehd-rescue:SolderJumper_2_Open-Jumper JP?
 U 1 1 6105F0EE
 P 8300 5650
 AR Path="/5A43CDD8/6105F0EE" Ref="JP?"  Part="1" 
@@ -427,7 +426,7 @@ Wire Wire Line
 Wire Wire Line
 	7100 3650 7100 3900
 $Comp
-L Device:Crystal_GND24_Small Y?
+L pcehd-rescue:Crystal_GND24_Small-Device Y?
 U 1 1 6105F0AC
 P 7100 3550
 AR Path="/5A43CDD8/6105F0AC" Ref="Y?"  Part="1" 
@@ -477,11 +476,12 @@ $EndComp
 Wire Wire Line
 	8650 6050 8200 6050
 $Comp
-L 74xx_IEEE:74153 U?
+L pcehd-rescue:74153-74xx_IEEE U?
 U 1 1 6105F08E
 P 9200 6300
 AR Path="/5A43CDD8/6105F08E" Ref="U?"  Part="1" 
 AR Path="/5ECF4034/6105F08E" Ref="U8"  Part="1" 
+AR Path="/6105F08E" Ref="U8"  Part="1" 
 F 0 "U8" H 9200 7450 50  0000 C CNN
 F 1 "74153" H 9200 7350 50  0000 C CNN
 F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 9200 6300 60  0001 C CNN
@@ -775,7 +775,7 @@ Wire Wire Line
 Wire Wire Line
 	2600 3950 2600 4100
 $Comp
-L power:GNDREF #PWR039
+L pcehd-rescue:GNDREF-power #PWR039
 U 1 1 5E270B0A
 P 2600 4100
 F 0 "#PWR039" H 2600 3850 50  0001 C CNN
@@ -787,7 +787,7 @@ F 3 "" H 2600 4100 50  0001 C CNN
 $EndComp
 Connection ~ 2600 4100
 $Comp
-L power:GNDREF #PWR049
+L pcehd-rescue:GNDREF-power #PWR049
 U 1 1 5E2719D5
 P 5850 1550
 F 0 "#PWR049" H 5850 1300 50  0001 C CNN
@@ -811,7 +811,7 @@ F 3 "" H 4350 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDREF #PWR040
+L pcehd-rescue:GNDREF-power #PWR040
 U 1 1 5E29CC14
 P 4350 1450
 F 0 "#PWR040" H 4350 1200 50  0001 C CNN
@@ -822,7 +822,7 @@ F 3 "" H 4350 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDREF #PWR041
+L pcehd-rescue:GNDREF-power #PWR041
 U 1 1 5E29DCD3
 P 4600 1450
 F 0 "#PWR041" H 4600 1200 50  0001 C CNN
@@ -848,7 +848,7 @@ F 3 "" H 5300 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDREF #PWR045
+L pcehd-rescue:GNDREF-power #PWR045
 U 1 1 5E2A9BFC
 P 5300 1450
 F 0 "#PWR045" H 5300 1200 50  0001 C CNN
@@ -859,7 +859,7 @@ F 3 "" H 5300 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDREF #PWR048
+L pcehd-rescue:GNDREF-power #PWR048
 U 1 1 5E2A9C02
 P 5550 1450
 F 0 "#PWR048" H 5550 1200 50  0001 C CNN
@@ -882,7 +882,7 @@ Wire Wire Line
 Wire Wire Line
 	4500 1750 4750 1750
 $Comp
-L Device:CP_Small C25
+L pcehd-rescue:CP_Small-Device C25
 U 1 1 5E2BC07C
 P 4600 1350
 F 0 "C25" H 4688 1396 50  0000 L CNN
@@ -896,7 +896,7 @@ Connection ~ 4600 1250
 Wire Wire Line
 	4600 1250 4900 1250
 $Comp
-L Device:CP_Small C26
+L pcehd-rescue:CP_Small-Device C26
 U 1 1 5E2BC749
 P 4750 1850
 F 0 "C26" H 4838 1896 50  0000 L CNN
@@ -912,7 +912,7 @@ Wire Wire Line
 Wire Wire Line
 	5300 1250 5550 1250
 $Comp
-L Device:CP_Small C30
+L pcehd-rescue:CP_Small-Device C30
 U 1 1 5E2BCBD4
 P 5550 1350
 F 0 "C30" H 5638 1396 50  0000 L CNN
@@ -930,7 +930,7 @@ Wire Wire Line
 Wire Wire Line
 	8300 1550 8250 1550
 $Comp
-L Device:CP_Small C79
+L pcehd-rescue:CP_Small-Device C79
 U 1 1 5E2BD348
 P 9150 1200
 F 0 "C79" V 9375 1200 50  0000 C CNN
@@ -943,7 +943,7 @@ $EndComp
 Wire Wire Line
 	8250 1450 8250 1100
 $Comp
-L Device:CP_Small C77
+L pcehd-rescue:CP_Small-Device C77
 U 1 1 5E2BB078
 P 8950 1100
 F 0 "C77" V 9175 1100 50  0000 C CNN
@@ -958,7 +958,7 @@ Wire Wire Line
 Wire Wire Line
 	8250 1100 8850 1100
 $Comp
-L Jumper:SolderJumper_2_Open JP?
+L pcehd-rescue:SolderJumper_2_Open-Jumper JP?
 U 1 1 5E309383
 P 8700 1400
 AR Path="/5A43CDD8/5E309383" Ref="JP?"  Part="1" 
@@ -971,7 +971,7 @@ F 3 "~" H 8700 1400 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Jumper:SolderJumper_2_Open JP?
+L pcehd-rescue:SolderJumper_2_Open-Jumper JP?
 U 1 1 5E309389
 P 8700 1550
 AR Path="/5A43CDD8/5E309389" Ref="JP?"  Part="1" 
@@ -987,7 +987,7 @@ Connection ~ 8550 1550
 Wire Wire Line
 	8550 1550 8550 1400
 $Comp
-L Jumper:SolderJumper_2_Open JP?
+L pcehd-rescue:SolderJumper_2_Open-Jumper JP?
 U 1 1 5E30DFC8
 P 9650 1400
 AR Path="/5A43CDD8/5E30DFC8" Ref="JP?"  Part="1" 
@@ -1000,7 +1000,7 @@ F 3 "~" H 9650 1400 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Jumper:SolderJumper_2_Open JP?
+L pcehd-rescue:SolderJumper_2_Open-Jumper JP?
 U 1 1 5E30DFCE
 P 9650 1550
 AR Path="/5A43CDD8/5E30DFCE" Ref="JP?"  Part="1" 
@@ -1024,7 +1024,7 @@ Wire Wire Line
 Wire Wire Line
 	9500 1550 9500 1850
 $Comp
-L Device:R_Small R?
+L pcehd-rescue:R_Small-Device R?
 U 1 1 5E334741
 P 8950 1550
 AR Path="/5A43CDD8/5E334741" Ref="R?"  Part="1" 
@@ -1037,7 +1037,7 @@ F 3 "~" H 8950 1550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small R?
+L pcehd-rescue:R_Small-Device R?
 U 1 1 5E33651E
 P 9900 1550
 AR Path="/5A43CDD8/5E33651E" Ref="R?"  Part="1" 
