@@ -1,11 +1,12 @@
 EESchema Schematic File Version 4
+LIBS:pcehd-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 5
 Title "PCEHD"
-Date "2020-01-12"
+Date "2020-01-16"
 Rev "0.1"
 Comp ""
 Comment1 ""
@@ -308,7 +309,7 @@ P 8500 5400
 AR Path="/5A43CDD8/6105F10D" Ref="R?"  Part="1" 
 AR Path="/5ECF4034/6105F10D" Ref="R17"  Part="1" 
 F 0 "R17" H 8700 5400 50  0000 R CNN
-F 1 "R_Small" H 8850 5450 50  0001 R CNN
+F 1 "10K" H 8850 5450 50  0001 R CNN
 F 2 "custom_components:SM0603_Resistor_libcms" H 8500 5400 50  0001 C CNN
 F 3 "~" H 8500 5400 50  0001 C CNN
 	1    8500 5400
@@ -321,7 +322,7 @@ P 8600 5400
 AR Path="/5A43CDD8/6105F107" Ref="R?"  Part="1" 
 AR Path="/5ECF4034/6105F107" Ref="R19"  Part="1" 
 F 0 "R19" H 8650 5400 50  0000 L CNN
-F 1 "R_Small" H 8659 5355 50  0001 L CNN
+F 1 "10K" H 8659 5355 50  0001 L CNN
 F 2 "custom_components:SM0603_Resistor_libcms" H 8600 5400 50  0001 C CNN
 F 3 "~" H 8600 5400 50  0001 C CNN
 	1    8600 5400
@@ -972,22 +973,6 @@ F 3 "~" H 8700 1400 50  0001 C CNN
 $EndComp
 $Comp
 L pcehd-rescue:SolderJumper_2_Open-Jumper JP?
-U 1 1 5E309389
-P 8700 1550
-AR Path="/5A43CDD8/5E309389" Ref="JP?"  Part="1" 
-AR Path="/5ECF4034/5E309389" Ref="JP4"  Part="1" 
-F 0 "JP4" H 8700 1700 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 8700 1664 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 8700 1550 50  0001 C CNN
-F 3 "~" H 8700 1550 50  0001 C CNN
-	1    8700 1550
-	-1   0    0    1   
-$EndComp
-Connection ~ 8550 1550
-Wire Wire Line
-	8550 1550 8550 1400
-$Comp
-L pcehd-rescue:SolderJumper_2_Open-Jumper JP?
 U 1 1 5E30DFC8
 P 9650 1400
 AR Path="/5A43CDD8/5E30DFC8" Ref="JP?"  Part="1" 
@@ -999,30 +984,10 @@ F 3 "~" H 9650 1400 50  0001 C CNN
 	1    9650 1400
 	-1   0    0    1   
 $EndComp
-$Comp
-L pcehd-rescue:SolderJumper_2_Open-Jumper JP?
-U 1 1 5E30DFCE
-P 9650 1550
-AR Path="/5A43CDD8/5E30DFCE" Ref="JP?"  Part="1" 
-AR Path="/5ECF4034/5E30DFCE" Ref="JP6"  Part="1" 
-F 0 "JP6" H 9650 1700 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 9650 1664 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 9650 1550 50  0001 C CNN
-F 3 "~" H 9650 1550 50  0001 C CNN
-	1    9650 1550
-	-1   0    0    1   
-$EndComp
-Connection ~ 9500 1550
-Wire Wire Line
-	9500 1550 9500 1400
 Wire Wire Line
 	8250 1750 8550 1750
 Wire Wire Line
-	8550 1550 8550 1750
-Wire Wire Line
 	8250 1850 9500 1850
-Wire Wire Line
-	9500 1550 9500 1850
 $Comp
 L pcehd-rescue:R_Small-Device R?
 U 1 1 5E334741
@@ -1148,4 +1113,18 @@ Wire Wire Line
 	5800 2400 5800 1950
 Wire Wire Line
 	6900 6650 7350 6650
+Wire Wire Line
+	8550 1400 8550 1550
+Wire Wire Line
+	9500 1400 9500 1550
+Wire Wire Line
+	8850 1550 8550 1550
+Connection ~ 8550 1550
+Wire Wire Line
+	8550 1550 8550 1750
+Wire Wire Line
+	9800 1550 9500 1550
+Connection ~ 9500 1550
+Wire Wire Line
+	9500 1550 9500 1850
 $EndSCHEMATC
