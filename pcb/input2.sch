@@ -69,31 +69,26 @@ F 3 "" H 2200 4250 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3350 4000 3450 4000
-Wire Wire Line
 	3450 3700 3650 3700
 Wire Wire Line
 	3200 3700 3450 3700
-Text HLabel 3650 3700 2    60   Output ~ 0
+Text HLabel 4150 3700 2    60   Output ~ 0
 DVDD5V
-Connection ~ 3350 4000
 Connection ~ 3450 3700
 Connection ~ 3200 3700
-Wire Wire Line
-	3200 4000 3350 4000
 Wire Wire Line
 	3200 3900 3200 4000
 $Comp
 L pcehd-rescue:GND-power #PWR?
 U 1 1 5ED1A2B6
-P 3350 4000
+P 3550 4100
 AR Path="/5A43CDD8/5ED1A2B6" Ref="#PWR?"  Part="1" 
 AR Path="/5ECF4034/5ED1A2B6" Ref="#PWR052"  Part="1" 
-F 0 "#PWR052" H 3350 4000 30  0001 C CNN
-F 1 "GND" H 3350 3930 30  0001 C CNN
-F 2 "" H 3350 4000 60  0001 C CNN
-F 3 "" H 3350 4000 60  0000 C CNN
-	1    3350 4000
+F 0 "#PWR052" H 3550 4100 30  0001 C CNN
+F 1 "GND" H 3550 4030 30  0001 C CNN
+F 2 "" H 3550 4100 60  0001 C CNN
+F 3 "" H 3550 4100 60  0000 C CNN
+	1    3550 4100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1127,4 +1122,75 @@ Wire Wire Line
 Connection ~ 9500 1550
 Wire Wire Line
 	9500 1550 9500 1850
+$Comp
+L pcehd-rescue:C-Device C?
+U 1 1 5E2436B3
+P 9700 5550
+AR Path="/5A43CDD8/5E2436B3" Ref="C?"  Part="1" 
+AR Path="/5ECF4034/5E2436B3" Ref="C93"  Part="1" 
+F 0 "C93" H 9725 5650 50  0000 L CNN
+F 1 "0.1u" H 9725 5450 50  0000 L CNN
+F 2 "custom_components:SM0603_Capa_libcms" H 9738 5400 50  0001 C CNN
+F 3 "" H 9700 5550 50  0000 C CNN
+	1    9700 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L pcehd-rescue:GND-power #PWR?
+U 1 1 5E2445FC
+P 9700 5700
+AR Path="/5A43CDD8/5E2445FC" Ref="#PWR?"  Part="1" 
+AR Path="/5ECF4034/5E2445FC" Ref="#PWR0179"  Part="1" 
+F 0 "#PWR0179" H 9700 5700 30  0001 C CNN
+F 1 "GND" H 9700 5630 30  0001 C CNN
+F 2 "" H 9700 5700 60  0001 C CNN
+F 3 "" H 9700 5700 60  0000 C CNN
+	1    9700 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L pcehd-rescue:C-Device C?
+U 1 1 5E24D671
+P 3650 3850
+AR Path="/5A43CDD8/5E24D671" Ref="C?"  Part="1" 
+AR Path="/5ECF4034/5E24D671" Ref="C94"  Part="1" 
+F 0 "C94" H 3650 3950 40  0000 L CNN
+F 1 "47u" H 3656 3765 40  0000 L CNN
+F 2 "custom_components:SM0603_Capa_libcms" H 3688 3700 30  0001 C CNN
+F 3 "~" H 3650 3850 60  0000 C CNN
+	1    3650 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L pcehd-rescue:C-Device C?
+U 1 1 5E251A93
+P 3850 3850
+AR Path="/5A43CDD8/5E251A93" Ref="C?"  Part="1" 
+AR Path="/5ECF4034/5E251A93" Ref="C95"  Part="1" 
+F 0 "C95" H 3850 3950 40  0000 L CNN
+F 1 "47u" H 3856 3765 40  0000 L CNN
+F 2 "custom_components:SM0603_Capa_libcms" H 3888 3700 30  0001 C CNN
+F 3 "~" H 3850 3850 60  0000 C CNN
+	1    3850 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 3700 3850 3700
+Connection ~ 3650 3700
+Wire Wire Line
+	3450 4000 3550 4000
+Wire Wire Line
+	3650 4000 3850 4000
+Connection ~ 3450 4000
+Connection ~ 3650 4000
+Wire Wire Line
+	3200 4000 3450 4000
+Wire Wire Line
+	3550 4000 3550 4100
+Connection ~ 3550 4000
+Wire Wire Line
+	3550 4000 3650 4000
+Wire Wire Line
+	3850 3700 4150 3700
+Connection ~ 3850 3700
 $EndSCHEMATC
