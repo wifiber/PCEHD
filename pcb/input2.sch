@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 5
 Title "PCEHD"
-Date "2020-01-16"
+Date "2020-01-18"
 Rev "0.1"
 Comp ""
 Comment1 ""
@@ -68,13 +68,8 @@ F 3 "" H 2200 4250 60  0001 C CNN
 	2    2200 4250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3450 3700 3650 3700
-Wire Wire Line
-	3200 3700 3450 3700
 Text HLabel 4150 3700 2    60   Output ~ 0
 DVDD5V
-Connection ~ 3450 3700
 Connection ~ 3200 3700
 Wire Wire Line
 	3200 3900 3200 4000
@@ -107,14 +102,14 @@ $EndComp
 $Comp
 L pcehd-rescue:C-Device C?
 U 1 1 5ED1A2AA
-P 3450 3850
+P 3550 3850
 AR Path="/5A43CDD8/5ED1A2AA" Ref="C?"  Part="1" 
 AR Path="/5ECF4034/5ED1A2AA" Ref="C27"  Part="1" 
-F 0 "C27" H 3450 3950 40  0000 L CNN
-F 1 "47u" H 3456 3765 40  0000 L CNN
-F 2 "custom_components:SM0603_Capa_libcms" H 3488 3700 30  0001 C CNN
-F 3 "~" H 3450 3850 60  0000 C CNN
-	1    3450 3850
+F 0 "C27" H 3550 3950 40  0000 L CNN
+F 1 "47u" H 3556 3765 40  0000 L CNN
+F 2 "custom_components:SM0603_Capa_libcms" H 3588 3700 30  0001 C CNN
+F 3 "~" H 3550 3850 60  0000 C CNN
+	1    3550 3850
 	1    0    0    -1  
 $EndComp
 NoConn ~ 2400 1650
@@ -1148,49 +1143,14 @@ F 3 "" H 9700 5700 60  0000 C CNN
 	1    9700 5700
 	1    0    0    -1  
 $EndComp
-$Comp
-L pcehd-rescue:C-Device C?
-U 1 1 5E24D671
-P 3650 3850
-AR Path="/5A43CDD8/5E24D671" Ref="C?"  Part="1" 
-AR Path="/5ECF4034/5E24D671" Ref="C94"  Part="1" 
-F 0 "C94" H 3650 3950 40  0000 L CNN
-F 1 "47u" H 3656 3765 40  0000 L CNN
-F 2 "custom_components:SM0603_Capa_libcms" H 3688 3700 30  0001 C CNN
-F 3 "~" H 3650 3850 60  0000 C CNN
-	1    3650 3850
-	1    0    0    -1  
-$EndComp
-$Comp
-L pcehd-rescue:C-Device C?
-U 1 1 5E251A93
-P 3850 3850
-AR Path="/5A43CDD8/5E251A93" Ref="C?"  Part="1" 
-AR Path="/5ECF4034/5E251A93" Ref="C95"  Part="1" 
-F 0 "C95" H 3850 3950 40  0000 L CNN
-F 1 "47u" H 3856 3765 40  0000 L CNN
-F 2 "custom_components:SM0603_Capa_libcms" H 3888 3700 30  0001 C CNN
-F 3 "~" H 3850 3850 60  0000 C CNN
-	1    3850 3850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3650 3700 3850 3700
-Connection ~ 3650 3700
-Wire Wire Line
-	3450 4000 3550 4000
-Wire Wire Line
-	3650 4000 3850 4000
-Connection ~ 3450 4000
-Connection ~ 3650 4000
-Wire Wire Line
-	3200 4000 3450 4000
 Wire Wire Line
 	3550 4000 3550 4100
+Connection ~ 3550 3700
+Wire Wire Line
+	3550 3700 4150 3700
 Connection ~ 3550 4000
 Wire Wire Line
-	3550 4000 3650 4000
+	3200 3700 3550 3700
 Wire Wire Line
-	3850 3700 4150 3700
-Connection ~ 3850 3700
+	3200 4000 3550 4000
 $EndSCHEMATC

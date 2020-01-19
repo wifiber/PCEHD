@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 5
 Title "PCEHD"
-Date "2020-01-12"
+Date "2020-01-18"
 Rev "0.1"
 Comp ""
 Comment1 ""
@@ -664,7 +664,6 @@ Wire Wire Line
 Text Label 1750 1400 0    60   ~ 0
 WRn
 NoConn ~ 1700 1700
-NoConn ~ 1700 1850
 Wire Wire Line
 	1700 1550 1950 1550
 Text Label 1750 1550 0    60   ~ 0
@@ -879,7 +878,7 @@ Entry Wire Line
 	4600 6950 4700 7050
 Entry Wire Line
 	4600 7050 4700 7150
-Text HLabel 5050 7500 2    60   Output ~ 0
+Text HLabel 5000 1450 2    60   Output ~ 0
 A[20..0]
 Text Label 4400 2450 0    60   ~ 0
 A20
@@ -1420,8 +1419,6 @@ Text Label 5800 2750 0    60   ~ 0
 XNMI
 Wire Wire Line
 	6000 5250 5350 5250
-Wire Bus Line
-	4700 7500 5050 7500
 Text Label 10000 5950 0    60   ~ 0
 HuID
 Connection ~ 9800 6200
@@ -1625,18 +1622,94 @@ NoConn ~ 8000 1750
 NoConn ~ 8000 1950
 Text HLabel 8000 1850 2    60   Output ~ 0
 XRD_O
-NoConn ~ 6650 1550
-NoConn ~ 8000 1650
 Wire Wire Line
 	8550 2650 8250 2650
 Text Label 8250 2650 0    60   ~ 0
 HSn
 Wire Wire Line
 	8550 2850 8250 2850
+Wire Wire Line
+	1700 1850 1950 1850
+NoConn ~ 8000 1650
+NoConn ~ 6650 1550
+Text Label 1950 1850 2    60   ~ 0
+CDD
+Text Label 9900 3900 0    60   ~ 0
+CDD
+Connection ~ 9700 4150
+Wire Wire Line
+	9700 4150 9950 4150
+Wire Wire Line
+	9900 3900 10250 3900
+$Comp
+L pcehd-rescue:BC847-Transistor_BJT Q3
+U 1 1 5E2B9DE0
+P 10150 4150
+F 0 "Q3" H 10341 4196 50  0000 L CNN
+F 1 "BC847" H 10341 4105 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 10350 4075 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 10150 4150 50  0001 L CNN
+	1    10150 4150
+	1    0    0    -1  
+$EndComp
+Connection ~ 10250 4400
+Wire Wire Line
+	10250 4400 10250 4350
+Wire Wire Line
+	10250 4400 10250 4450
+Wire Wire Line
+	9650 4150 9700 4150
+Wire Wire Line
+	9700 4200 9700 4150
+Wire Wire Line
+	10250 3900 10250 3950
+Wire Wire Line
+	9300 4150 9450 4150
+$Comp
+L pcehd-rescue:GND-power #PWR0180
+U 1 1 5E2B9DED
+P 10250 4450
+F 0 "#PWR0180" H 10250 4450 30  0001 C CNN
+F 1 "GND" H 10250 4380 30  0001 C CNN
+F 2 "" H 10250 4450 60  0001 C CNN
+F 3 "" H 10250 4450 60  0000 C CNN
+	1    10250 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L pcehd-rescue:R_Small-Device R31
+U 1 1 5E2B9DF3
+P 9550 4150
+F 0 "R31" V 9650 4100 50  0000 C CNN
+F 1 "1K" V 9750 4100 50  0000 C CNN
+F 2 "custom_components:SM0603_Resistor_libcms" H 9550 4150 50  0001 C CNN
+F 3 "~" H 9550 4150 50  0001 C CNN
+	1    9550 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L pcehd-rescue:R_Small-Device R32
+U 1 1 5E2B9DF9
+P 9700 4300
+F 0 "R32" H 9759 4346 50  0000 L CNN
+F 1 "10K" H 9759 4255 50  0000 L CNN
+F 2 "custom_components:SM0603_Resistor_libcms" H 9700 4300 50  0001 C CNN
+F 3 "~" H 9700 4300 50  0001 C CNN
+	1    9700 4300
+	1    0    0    -1  
+$EndComp
+Text HLabel 9300 4150 0    60   Input ~ 0
+CDD_I
+Wire Wire Line
+	9800 4400 10250 4400
+Wire Wire Line
+	9700 4400 10250 4400
+Wire Bus Line
+	4700 1450 5000 1450
 Wire Bus Line
 	8500 3600 8500 4550
 Wire Bus Line
 	8050 5650 8050 6750
 Wire Bus Line
-	4700 2550 4700 7500
+	4700 1450 4700 7250
 $EndSCHEMATC

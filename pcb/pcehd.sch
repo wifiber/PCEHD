@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 5
 Title "PCEHD"
-Date "2020-01-15"
+Date "2020-01-18"
 Rev "0.1"
 Comp ""
 Comment1 ""
@@ -137,6 +137,7 @@ F25 "RST_N_O" O R 7350 2150 60
 F26 "R[2..0]" O R 7350 2500 60 
 F27 "G[2..0]" O R 7350 2600 60 
 F28 "B[2..0]" O R 7350 2700 60 
+F29 "CDD_O" O R 7350 2350 60 
 $EndSheet
 $Sheet
 S 8600 1850 1350 4000
@@ -198,6 +199,7 @@ F14 "A[20..0]" O R 3100 2300 60
 F15 "HuID_N_I" I L 1600 2250 60 
 F16 "HuID_N_O" O R 3100 2750 60 
 F17 "XRD_O" O R 3100 3050 60 
+F18 "CDD_I" I L 1600 2350 60 
 $EndSheet
 Wire Wire Line
 	3100 3850 3500 3850
@@ -338,4 +340,14 @@ Wire Wire Line
 Connection ~ 5700 6100
 Wire Wire Line
 	5700 6100 6300 6100
+Wire Wire Line
+	7350 2350 7800 2350
+Wire Wire Line
+	7800 2350 7800 1350
+Wire Wire Line
+	7800 1350 1250 1350
+Wire Wire Line
+	1250 1350 1250 2350
+Wire Wire Line
+	1250 2350 1600 2350
 $EndSCHEMATC

@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 5
 Title "PCEHD"
-Date "2020-01-03"
+Date "2020-01-18"
 Rev "0.1"
 Comp ""
 Comment1 ""
@@ -2450,9 +2450,12 @@ Wire Wire Line
 	1050 5050 1700 5050
 Wire Wire Line
 	5300 6500 5300 6350
-NoConn ~ 3400 6350
 Wire Wire Line
 	5900 6350 5900 6500
+Wire Wire Line
+	3400 6350 3400 6500
+Text HLabel 3400 6500 3    60   Output ~ 0
+CDD_O
 Wire Bus Line
 	10650 1900 10650 2500
 Wire Bus Line
