@@ -19,7 +19,7 @@ VCCIO
 Text HLabel 1650 5500 0    60   Input ~ 0
 DCK
 Text HLabel 1650 5700 0    60   Input ~ 0
-HSn
+HSn_buf
 Text Label 1950 5700 0    60   ~ 0
 HSn_buf
 Text Label 1950 5500 0    60   ~ 0
